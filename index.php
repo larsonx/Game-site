@@ -10,6 +10,7 @@
     <title>GameHub</title>
   </head>
 <body>
+  <div class="container-fluid">
 <header>
 <a href="#" class="logo">GameHub</a>
 <nav class="navbar">
@@ -25,7 +26,7 @@
 </ul>
 </nav>
 </header>
-
+</div>
 
 
 
