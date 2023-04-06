@@ -10,7 +10,7 @@
     <title>GameHub</title>
   </head>
 <body>
-  <div class="container-fluid">
+  <div class="container">
 <header>
 <a href="#" class="logo">GameHub</a>
 <nav class="navbar">
