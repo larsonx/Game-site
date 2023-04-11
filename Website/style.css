@@ -96,6 +96,10 @@ body {
   background-color: white;
   border-radius: 10px;
 }
+
+.welkom{
+  color:white;
+}
 @media (max-width:600px){
   .toggle-button {
     display:flex;
