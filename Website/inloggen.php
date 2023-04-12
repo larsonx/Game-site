@@ -25,7 +25,11 @@
           <li><a href="inloggen.php">Inloggen</a></li>
         </ul>
     </nav>
+    </div>
   </header>
+  
+  <div class="wrapper">
+  <h2>login</h2>
   </div>
 </body>
 </html>
