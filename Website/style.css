@@ -126,3 +126,8 @@ text-align:center;
     display: flex;
   }
 }
+.wrapper{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
