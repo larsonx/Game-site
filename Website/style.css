@@ -61,6 +61,11 @@ body {
 
 .brand-title {
   font-size: 1.5rem;
+<<<<<<< Updated upstream
+=======
+  text-shadow: 1px 1px 2px rgb(194, 194, 194), 0 0 1em rgb(175, 175, 175),
+    0 0 0.2em rgb(209, 209, 209);
+>>>>>>> Stashed changes
   margin: 0.5rem;
   color: white;
 }
@@ -170,7 +175,6 @@ body {
   transform: translateX(0);
 }
 
-
 .form-box h2 {
   font-size: 2em;
   text-align: center;
@@ -259,5 +263,3 @@ body {
 .login-register p a:hover {
   text-decoration: underline;
 }
-
-
