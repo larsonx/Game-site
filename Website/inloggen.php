@@ -78,7 +78,6 @@
           <div class="remember-forgot">
             <label><input type="checkbox">
               I agree to the terms & conditions</label>
-
           </div>
           <button type="submit" class="login-button">Register
           </button>
