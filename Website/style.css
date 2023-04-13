@@ -138,7 +138,7 @@ body {
   display: flex;
   justify-content: center;
   border-radius: 20px;
-  margin-top: 12rem;
+  margin-top: 8rem;
   align-items: center;
   backdrop-filter: blur(20px);
   overflow: hidden;
