@@ -33,7 +33,23 @@
     </nav>
     </div>
   </header>
-
+<div class="mainText"> 
+  <h1 class="h1">Choose your game </h1>
+</div>
+ <div class = "card">
+    <img src="../img/dino.png" alt="" >
+    <div class="card-content">
+      <h2>
+        Dino Run
+      </h2>
+      <p>
+      Dino Run is a fast-paced runner game. You, a small raptor, must outrun the "Wall of Doom"
+      </p>
+      <a href="#" class="button">
+        Play now
+      </a>
+    </div>
+  </div>
 </body>
 
 </html>
