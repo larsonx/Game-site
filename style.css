@@ -238,4 +238,55 @@ body {
   text-decoration: underline;
 }
 
+.container {
+  position:relative;
+  max-height: 800px;
+	max-width: 800px;
+  backdrop-filter: blur(20px);
+  background: transparent;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+	margin: auto;
+  margin-top: 8rem;
+	padding: 25px;
+  
+  
+}
+
+.profile-header {
+	display: flex;
+	align-items: center;
+  margin-top: 100px;
+}
+
+.profile-image img {
+	border-radius: 50%;
+}
+
+.profile-username h1 {
+	margin-left: 20px;
+  color:white;
+}
+
+.profile-bio h2 {
+	margin-top: 30px;
+  color:white;
+}
+
+.profile-bio p {
+	line-height: 1.5;
+  color:white;
+}
+
+.profile-achievements h2 {
+	margin-top: 30px;
+  color:white;
+}
+
+.profile-achievements ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  color:white;
+}
 
