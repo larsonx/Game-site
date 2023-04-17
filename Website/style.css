@@ -189,7 +189,7 @@ text-align:center;
 }
 
 .card:hover h2 {
-  inset: auto auto 350px 30px;
+  inset: auto auto 330px 30px;
   transition: inset 0.3s ease-out;
 }
 
@@ -206,4 +206,16 @@ text-align:center;
 
 .material-symbols-outlined {
   vertical-align: middle;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 2rem;
+  margin-left: 7rem;
+}
+
+.grid-item {
+  display: flex;
+ 
 }
