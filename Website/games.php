@@ -27,8 +27,7 @@
         <ul>
           <li><a href="index.php">Home</a></li>
           <li><a href="games.php">Games</a></li>
-          <li><a href="registreren.php">Registreren</a></li>
-          <li><a href="inloggen.php">Inloggen</a></li>
+          <li><a href="inloggen.php">Login</a></li>
         </ul>
     </nav>
     </div>

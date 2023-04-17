@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE-edge" />
@@ -8,6 +9,7 @@
   <script src="script.js" defer></script>
   <title>GameHub</title>
 </head>
+
 <body>
   <header>
     <nav class="navbar">
@@ -21,12 +23,12 @@
         <ul>
           <li><a href="index.php">Home</a></li>
           <li><a href="games.php">Games</a></li>
-          <li><a href="registreren.php">Registreren</a></li>
-          <li><a href="inloggen.php">Inloggen</a></li>
+          <li><a href="inloggen.php">Login</a></li>
         </ul>
     </nav>
     </div>
   </header>
-  
+
 </body>
+
 </html>
