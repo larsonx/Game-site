@@ -152,7 +152,7 @@
 			<th>Score</th>
 		</tr>
 		<tr>
-			<td>1</td>
+			<td class="test">1</td>
 			<td></td>
 			<td></td>
 		

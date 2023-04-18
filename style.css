@@ -35,7 +35,8 @@ body {
 .brand-title {
   font-family: "Super Legend Boy", sans-serif;
   font-size: 1.5rem;
-  text-shadow: 1px 1px 2px rgb(194, 194, 194), 0 0 1em rgb(175, 175, 175), 0 0 0.2em rgb(209, 209, 209);
+  text-shadow: 1px 1px 2px rgb(194, 194, 194), 0 0 1em rgb(175, 175, 175),
+    0 0 0.2em rgb(209, 209, 209);
   margin: 0.5rem;
   color: white;
 }
@@ -147,7 +148,6 @@ body {
   transform: translateX(0);
 }
 
-
 .form-box h2 {
   font-size: 2em;
   text-align: center;
@@ -172,7 +172,6 @@ body {
 .input-box input:focus ~ label,
 .input-box input:valid ~ label {
   top: -5px;
-
 }
 .input-box input {
   width: 100%;
@@ -239,79 +238,81 @@ body {
 }
 
 .container {
-  position:relative;
+  position: relative;
   max-height: 800px;
-	max-width: 800px;
+  max-width: 800px;
   backdrop-filter: blur(250px);
   background: transparent;
   border-radius: 20px;
   border: 2px solid rgba(255, 255, 255, 0.5);
-	margin: auto;
+  margin: auto;
   margin-top: 8rem;
-	padding: 25px;
-
+  padding: 25px;
 }
 
 .profile-header {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
   margin-top: 25px;
 }
 
 .profile-image img {
-	border-radius: 50%;
+  border-radius: 50%;
 }
 
 .profile-username h1 {
-	margin-left: 20px;
-  color:white;
+  margin-left: 20px;
+  color: white;
 }
 
 .profile-bio h2 {
-	margin-top: 30px;
-  color:white;
+  margin-top: 30px;
+  color: white;
 }
 
 .profile-bio p {
-	line-height: 1.5;
-  color:white;
+  line-height: 1.5;
+  color: white;
 }
 
 .profile-achievements h2 {
-	margin-top: 30px;
-  color:white;
+  margin-top: 30px;
+  color: white;
 }
 
 .profile-achievements ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-  color:white;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: white;
 }
 
-.highscore-container{
-  position:relative;
-  height: 350px;
-	width: 400px;
+.highscore-container {
+  position: relative;
+  height: 340px;
+  width: 400px;
   align-items: center;
   text-align: center;
   backdrop-filter: blur(250px);
   background: transparent;
   border-radius: 20px;
   border: 2px solid rgba(255, 255, 255, 0.5);
-	margin: auto;
+  margin: auto;
   margin-top: 10rem;
-	padding: 25px;
+  padding: 25px;
 }
 table {
   margin: 0 auto;
 }
-table td, tr, h2 {
+table td,
+tr,
+h2 {
   margin: 0 auto;
   color: white;
   font-family: "Super Legend Boy", sans-serif;
 }
-.score-font{
+
+.score-font {
   font-size: 1.45em;
 }
 .row {
