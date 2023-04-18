@@ -25,6 +25,7 @@
       <div class="navbar-links">
         <ul>
           <li><a href="index.php">Home</a></li>
+          <li><a href="highscore.php">Hi-Scores</a></li>
           <li><a href="games.php">Games</a></li>
           <li><a href="inloggen.php">Login</a></li>
         </ul>
@@ -79,7 +80,6 @@
           <div class="remember-forgot">
             <label><input type="checkbox">
               I agree to the terms & conditions</label>
-
           </div>
           <button type="submit" class="login-button">Register
           </button>
