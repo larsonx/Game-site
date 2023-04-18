@@ -29,8 +29,9 @@
         </nav>
         </div>
     </header>
+    <div class="row">
     <div class="highscore-container">
-    <h2>Tetris Highscores</h2>
+    <h2 class="score-font">Tetris</h2>
 	<table>
 		<tr>
 			<th>Rank</th>
@@ -38,31 +39,221 @@
 			<th>Score</th>
 		</tr>
 		<tr>
+			<td>1</td>
 			<td></td>
+			<td></td>
+		
+		<tr>
+			<td>2</td>
 			<td></td>
 			<td></td>
 		</tr>
 		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
+			<td>3</td>
 			<td></td>
 			<td></td>
 		</tr>
 		<tr>
+			<td>4</td>
 			<td></td>
-			<td>y</td>
 			<td></td>
 		</tr>
 		<tr>
+			<td>6</td>
 			<td></td>
+			<td></td>
+		</tr>
+        <tr>
+			<td>7</td>
+			<td></td>
+			<td></td>
+		</tr>
+        <tr>
+			<td>8</td>
+			<td></td>
+			<td></td>
+		</tr>
+        <tr>
+			<td>9</td>
+			<td></td>
+			<td></td>
+		</tr>
+        <tr>
+			<td>10</td>
+			<td></td>
+			<td></td>
+		</tr>
+        
+	</table>
+    
+    </div>
+    <div class="highscore-container">
+    <h2 class="score-font">Steen Papier Schaar</h2>
+	<table>
+		<tr >
+			<th>Rank</th>
+			<th>Spelernaam</th>
+			<th>Score</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td></td>
+			<td></td>
+		
+		<tr>
+			<td>2</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td></td>
+			<td></td>
+		</tr>
+        <tr>
+			<td>7</td>
+			<td></td>
+			<td></td>
+		</tr>
+        <tr>
+			<td>8</td>
+			<td></td>
+			<td></td>
+		</tr>
+        <tr>
+			<td>9</td>
+			<td></td>
+			<td></td>
+		</tr>
+        <tr>
+			<td>10</td>
 			<td></td>
 			<td></td>
 		</tr>
 	</table>
+    
+    </div>
+    <div class="highscore-container">
+    <h2 class="score-font">Dino Run</h2>
+	<table>
+		<tr >
+			<th>Rank</th>
+			<th>Spelernaam</th>
+			<th>Score</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td></td>
+			<td></td>
+		
+		<tr>
+			<td>2</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td></td>
+			<td></td>
+		</tr>
+        <tr>
+			<td>7</td>
+			<td></td>
+			<td></td>
+		</tr>
+        <tr>
+			<td>8</td>
+			<td></td>
+			<td></td>
+		</tr>
+        <tr>
+			<td>9</td>
+			<td></td>
+			<td></td>
+		</tr>
+        <tr>
+			<td>10</td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+    
+    </div>
+    <div class="highscore-container">
+    <h2 class="score-font">Hangman</h2>
+	<table>
+		<tr>
+			<th>Rank</th>
+			<th>Spelernaam</th>
+			<th>Score</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td></td>
+			<td></td>
+		
+		<tr>
+			<td>2</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td></td>
+			<td></td>
+		</tr>
+        <tr>
+			<td>7</td>
+			<td></td>
+			<td></td>
+		</tr>
+        <tr>
+			<td>8</td>
+			<td></td>
+			<td></td>
+		</tr>
+        <tr>
+			<td>9</td>
+			<td></td>
+			<td></td>
+		</tr>
+        <tr>
+			<td>10</td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+    </div>
     </div>
 </body>
 </html>
