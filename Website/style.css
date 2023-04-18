@@ -238,7 +238,8 @@ body {
   overflow: hidden;
   cursor: pointer;
   position: relative;
-  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 20px 30px 15px rgba(216, 211, 211, 0.2);
+  border: 2px solid rgba(67, 22, 151, 0.5);
   margin: 2rem;
 }
 
@@ -317,7 +318,7 @@ body {
   display: flex;
  
 }
-=======
+
 .remember-forgot a {
   color: rgb(255, 255, 255);
   text-decoration: none;
