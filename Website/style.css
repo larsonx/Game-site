@@ -57,6 +57,8 @@ body {
 }
 .navbar-links li:hover {
   background-color: #ff9500;
+  opacity: 0.9;
+  transition: opacity 0.5s 0.1s ease-in;
 }
 .toggle-button {
   position: absolute;
