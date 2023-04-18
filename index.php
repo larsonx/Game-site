@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE-edge" />
@@ -9,9 +8,7 @@
   <script src="script.js" defer></script>
   <title>GameHub</title>
 </head>
-
 <body>
-
   <header>
     <nav class="navbar">
       <div class="brand-title">GameHub</div>
