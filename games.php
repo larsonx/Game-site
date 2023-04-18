@@ -39,7 +39,7 @@
 <div class="grid-container">
   <div class="grid-item"> 
  <div class = "card">
-    <img src="../img/dino.png" alt="" >
+    <img src="./img/dino.png" alt="" >
     <div class="card-content">
       <h2>
         Dino Run
@@ -55,7 +55,7 @@
   </div>
   <div class="grid-item">
     <div class = "card">
-    <img src="../img/steen.png" alt="" >
+    <img src="./img/steen.png" alt="" >
     <div class="card-content">
       <h2>
         Rock Paper Scissors
@@ -69,7 +69,7 @@
     </div></div>
   <div class="grid-item">
     <div class = "card">
-    <img src="../img/tetris.png" alt="" >
+    <img src="./img/tetris.png" alt="" >
     <div class="card-content">
       <h2>
         Tetris
@@ -83,7 +83,7 @@
     </div></div>
   <div class="grid-item">
     <div class = "card">
-    <img src="../img/hangman.png" alt="" >
+    <img src="./img/hangman.png" alt="" >
     <div class="card-content">
       <h2>
         Hangman
