@@ -1,0 +1,53 @@
+
+.container-t {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid-t {
+  align-items: center;
+  justify-content: center;
+  margin-left: 80px;
+  width: 200px;
+  height: 400px;
+  margin-top:100px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: yellow;
+  border: 1px solid;
+  box-shadow: 5px 5px;
+  transform: scale(1.2);
+     
+}
+.grid-t div {
+  height: 20px;
+  width: 20px;
+}
+.tetromino {
+  box-sizing: border-box;
+  border: 1px solid rgb(22, 21, 21);
+}
+
+.mini-grid {
+  margin-left: 50px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: yellow;
+  border: 1px solid;
+  box-shadow: 5px 5px;
+  transform: scale(1.2);
+}
+.mini-grid div {
+  height: 20px;
+  width: 20px;
+}
+#game-over{
+  margin-top: 10px;
+  width: 50px;
+  height: 10px;
+}
+.submit-btn{
+  width: 90px;
+}
