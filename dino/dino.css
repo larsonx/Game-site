@@ -5,7 +5,7 @@
     
 }
 body {
-    background-image: url(/dino/img/istockphoto-1167952490-170667a.jpg);
+    background-image: url(/img/istockphoto-1167952490-170667a.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -26,7 +26,7 @@ body {
 #character{
     width: 40px;
     height: 50px;
-    background-image: url(/dino/img/dino.png);
+    background-image: url(/img/dino\ copy.png);
     position:relative;
     display: block;
     top: 250px;

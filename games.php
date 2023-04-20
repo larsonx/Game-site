@@ -47,7 +47,7 @@
           <p>
             Dino Run is a fast-paced runner game. You, a small raptor, must outrun the "Wall of Doom"
           </p>
-          <a href="#" class="button">
+          <a href="../dino/dino.php" class="button">
             Play now
           </a>
         </div>
