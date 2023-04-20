@@ -11,7 +11,7 @@ body {
 
 }
 .game{
-    background-image: url(/dino/img/wild-west1.jpg);
+    background-image: url(/img/wild-west.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
