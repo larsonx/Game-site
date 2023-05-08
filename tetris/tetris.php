@@ -26,10 +26,10 @@
       </a>
       <div class="navbar-links">
         <ul>
-          <li><a href="index.php">Home</a></li>
-          <li><a href="highscore.php">Hi-Scores</a></li>
-          <li><a href="games.php">Games</a></li>
-          <li><a href="inloggen.php">Login</a></li>
+          <li><a href="../index.php">Home</a></li>
+          <li><a href="../highscore.php">Hi-Scores</a></li>
+          <li><a href="../games.php">Games</a></li>
+          <li><a href="../inloggen.php">Login</a></li>
         </ul>
     </nav>
     </div>
