@@ -21,7 +21,7 @@
   <?php
   include '../header.php';
   ?>
- <div class="container-galgje">
+ <div class="container">
       <div id="options-container"></div>
       <div id="letter-container" class="letter-container hide"></div>
       <div id="user-input-section"></div>
