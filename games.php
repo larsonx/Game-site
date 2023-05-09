@@ -59,7 +59,7 @@ include 'header.php';
       <p>
         In Tetris, players complete lines by moving differently shaped pieces (tetrominoes), which descend onto the playing field. The completed lines disappear and grant the player points
       </p>
-      <a href="#" class="button">
+      <a href="tetris/tetris.php" class="button">
         Play now
       </a>
     </div></div>
