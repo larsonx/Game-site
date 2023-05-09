@@ -4,9 +4,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
   }
-  body {
-    background-color: #8c52ff;
-  }
+  
   .container {
     font-size: 16px;
     background-color: #ffffff;
