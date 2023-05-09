@@ -10,6 +10,10 @@
    <script src="script.js" defer></script>
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="style3.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   <title>GameHub</title>
 </head>
 
@@ -17,7 +21,7 @@
   <?php
   include '../header.php';
   ?>
- <div class="container">
+ <div class="container-galgje">
       <div id="options-container"></div>
       <div id="letter-container" class="letter-container hide"></div>
       <div id="user-input-section"></div>
