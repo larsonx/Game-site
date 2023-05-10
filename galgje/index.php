@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hangman</title>
-    <!-- Google Fonts -->
-    <link
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+  <meta name="viewport" content="width=device-width, initial-scale 1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style2.css" />
+  <script src="script.js" defer></script>
+  <title>GameHub</title>
+<link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
+</head>
+
+<body>
+  <?php
+  include '../header.php';
+  ?>
+  <div class="container">
       <div id="options-container"></div>
       <div id="letter-container" class="letter-container hide"></div>
       <div id="user-input-section"></div>
@@ -24,5 +31,6 @@
     </div>
     <!-- Script -->
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
