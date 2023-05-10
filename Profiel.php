@@ -9,6 +9,7 @@
     <title>GameHub</title>
 </head>
 <body>
+
 <?php
 include 'header.php';
   ?>

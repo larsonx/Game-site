@@ -11,9 +11,11 @@
 </head>
 
 <body>
+
 <?php
 include 'header.php';
   ?>
+
     <div class="row">
     <div class="highscore-container">
     <h2 class="score-font">Tetris</h2>
