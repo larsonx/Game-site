@@ -14,6 +14,11 @@
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="script.js" defer></script>
+
+  <?php
+include 'header.php';
+  ?>
+
   <header>
     <nav class="navbar">
       <div class="brand-title">GameHub</div>
@@ -31,7 +36,7 @@
         </ul>
     </nav>
     </div>
-  </header>
+
   <div class="wrapper">
     <div class="form-box login">
       <h2>Login</h2>
