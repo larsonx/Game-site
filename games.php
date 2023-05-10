@@ -79,12 +79,6 @@ include 'header.php';
       </a>
     </div>
   </div>
-</div>
+</div>  
 </body>
-
-  
-  
-</body>
-
-
 </html>

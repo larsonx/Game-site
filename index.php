@@ -9,14 +9,10 @@
   <script src="script.js" defer></script>
   <title>GameHub</title>
 </head>
-
-
 <body>
   <?php
   include 'header.php';
   ?>
-
-
 </body>
 
 </html>
