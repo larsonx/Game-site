@@ -4,7 +4,7 @@
 
 * {
   box-sizing: border-box;
-
+}
 .span1 {
   border-radius: 10px;
   background-color: black;
@@ -174,8 +174,8 @@ body {
   pointer-events: none;
   transition: 0.5s;
 }
-.input-box input:focus ~ label,
-.input-box input:valid ~ label {
+.input-box input:focus  label,
+.input-box input:valid  label {
   top: -5px;
 }
 .input-box input {
@@ -431,7 +431,7 @@ body {
 table {
   margin: 0 auto;
 }
-table td,
+table td, 
 tr,
 h2 {
   margin: 0 auto;
