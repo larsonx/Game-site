@@ -431,7 +431,7 @@ table {
   margin: 0 auto;
 }
 
-table td tr h2 {
+table td, tr, h2 {
   margin: 0 auto;
   color: white;
   font-family: "Super Legend Boy", sans-serif;
