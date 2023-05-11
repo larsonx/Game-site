@@ -348,6 +348,10 @@ body {
   .card h2{
     font-size: 0.55rem;
   }
+  .mainText{
+    text-align: start;
+    margin-left:3.3rem;
+  }
 }
 .remember-forgot a {
   color: rgb(255, 255, 255);
