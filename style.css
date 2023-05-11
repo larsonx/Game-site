@@ -209,7 +209,7 @@ body {
   color: white;
   font-family: "Super Legend Boy", sans-serif;
   text-align: center;
-  margin-top: 8rem;
+  margin-top: 7rem;
 }
 .h1 {
   display: inline-block;
@@ -229,15 +229,15 @@ body {
 }
 
 .card {
-  width: 20rem;
-  height: 25rem;
+  width: 14rem;
+  height: 18rem;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
   position: relative;
   box-shadow: 10px 20px 30px 15px rgba(216, 211, 211, 0.2);
   border: 2px solid rgba(67, 22, 151, 0.5);
-  margin: 2rem;
+  
 }
 
 .card img {
