@@ -49,7 +49,7 @@ include 'header.php';
       <a href="#" class="button">
         Play now
       </a>
-    </div></div>
+    </div></div></div>
   <div class="grid-item">
     <div class = "card">
     <img src="./img/tetris.png" alt="" >
@@ -63,7 +63,7 @@ include 'header.php';
       <a href="tetris/tetris.php" class="button">
         Play now
       </a>
-    </div></div>
+    </div></div></div>
   <div class="grid-item">
     <div class = "card">
     <img src="./img/hangman.png" alt="" >
@@ -79,6 +79,6 @@ include 'header.php';
       </a>
     </div>
   </div>
-</div>
+</div>  
 </body>
 </html>

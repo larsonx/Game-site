@@ -32,7 +32,8 @@ body {
 .brand-title {
   font-family: "Super Legend Boy", sans-serif;
   font-size: 1.5rem;
-  text-shadow: 1px 1px 2px rgb(194, 194, 194), 0 0 1em rgb(175, 175, 175), 0 0 0.2em rgb(209, 209, 209);
+  text-shadow: 1px 1px 2px rgb(194, 194, 194), 0 0 1em rgb(175, 175, 175),
+    0 0 0.2em rgb(209, 209, 209);
   margin: 0.5rem;
   color: white;
 }
@@ -57,7 +58,6 @@ body {
 
   opacity: 0.9;
   transition: opacity 0.5s 0.1s ease-in;
-
 }
 .toggle-button {
   position: absolute;
@@ -79,7 +79,7 @@ body {
 .welkom {
   color: white;
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .toggle-button {
     display: flex;
   }
@@ -169,8 +169,8 @@ body {
   pointer-events: none;
   transition: 0.5s;
 }
-.input-box input:focus ~ label,
-.input-box input:valid ~ label {
+.input-box input:focus label,
+.input-box input:valid label {
   top: -5px;
 }
 .input-box input {
@@ -205,13 +205,11 @@ body {
   margin-right: 3px;
 }
 
-
 .mainText {
   color: white;
   font-family: "Super Legend Boy", sans-serif;
   text-align: center;
-  margin-top: 10rem;
-  
+  margin-top: 8rem;
 }
 .h1 {
   display: inline-block;
@@ -242,7 +240,6 @@ body {
   margin: 2rem;
 }
 
-
 .card img {
   position: absolute;
   object-fit: cover;
@@ -254,7 +251,6 @@ body {
   object-fit: cover;
   width: 20%;
   height: 20%;
-
   top: 0;
   left: 0;
   opacity: 0.9;
@@ -323,9 +319,55 @@ body {
 
 .grid-item {
   display: flex;
- 
 }
-
+@media only screen and (max-width: 600px) {
+  .card p {
+    display: none;
+  }
+  .card {
+    display: flex;
+    width: 10rem;
+    height: 12rem;
+    margin: 1rem;
+  }
+  .grid-container {
+    margin-top: -1rem;
+    margin-left: 1rem;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
+  }
+  .card h2 {
+    font-size: 0.55rem;
+  }
+}
+@media only screen and (max-width: 1600px) and (min-width: 600px) {
+  .card p {
+    display: none;
+  }
+  .card {
+    display: flex;
+    width: 14rem;
+    height: 16rem;
+    margin: 1rem;
+  }
+  .grid-container {
+    justify-content: center;
+    align-items: center;
+    margin-top: -1rem;
+    margin-left: 1rem;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-row: auto auto;
+  }
+  .mainText {
+    text-align: center;
+    margin-left: 1rem;
+  }
+  .card h2 {
+    font-size: 1rem;
+  }
+}
 .remember-forgot a {
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -410,22 +452,23 @@ body {
 }
 
 .highscore-container {
-  position: relative;
-  height: 340px;
-  width: 400px;
+  height: 18rem;
+  width: 22rem;
   align-items: center;
   text-align: center;
   backdrop-filter: blur(250px);
   background: transparent;
   border-radius: 20px;
   border: 2px solid rgba(255, 255, 255, 0.5);
-  margin: auto;
-  margin-top: 10rem;
-  padding: 25px;
+  margin-left: 1rem;
+  margin-top: 5rem;
+  padding: 10px;
 }
+
 table {
   margin: 0 auto;
 }
+
 table td,
 tr,
 h2 {
@@ -438,8 +481,40 @@ h2 {
   font-size: 1.45em;
 }
 .row {
-  display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+@media only screen and (max-width: 600px) {
+  .row {
+    margin-left: 1.1rem;
+  }
+  .highscore-container {
+    height: 10rem;
+    width: 12rem;
+  }
+  table td,
+  tr {
+    font-size: 0.6rem;
+  }
+  .score-font {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 1600px) and (min-width: 600px) {
+  .row {
+    margin-left: 1.1rem;
+  }
+  .highscore-container {
+    height: 16rem;
+    width: 18rem;
+  }
+  table td,
+  tr {
+    font-size: 0.9rem;
+  }
+  .score-font {
+    font-size: 1.2rem;
+  }
 }
