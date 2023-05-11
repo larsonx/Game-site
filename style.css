@@ -466,8 +466,10 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.5);
   margin: auto;
   margin-top: 10rem;
-  padding: 25px;
+  padding: 10px;
+  
 }
+
 table {
   margin: 0 auto;
 }
@@ -488,4 +490,40 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+@media only screen and (max-width:600px){
+.highscore-container{
+  height: 160px;
+  width:220px;
+  margin-top: 2.5rem;
+}
+.score-font{
+  font-size: 0.8em;
+}
+table td,
+tr,
+h2 {
+  font-size: 0.8em;
+  margin: 0 auto;
+  color: white;
+  font-family: "Super Legend Boy", sans-serif;
+}
+}
+@media only screen and (max-width: 1600px) and (min-width:600px){
+  .highscore-container{
+    height: 160px;
+    width:220px;
+    margin-top: 1rem;
+  }
+  .score-font{
+    font-size: 0.8em;
+  }
+  table td,
+  tr,
+  h2 {
+    font-size: 0.8em;
+    margin: 0 auto;
+    color: white;
+    font-family: "Super Legend Boy", sans-serif;
+  }
 }
