@@ -348,8 +348,8 @@ body {
   }
   .card {
     display: flex;
-    width: 12rem;
-    height: 14rem;
+    width: 14rem;
+    height: 16rem;
     margin: 1rem;
   }
   .grid-container {
@@ -358,7 +358,7 @@ body {
     margin-top: -1rem;
     margin-left: 1rem;
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 250px 250px;
     grid-row: auto auto;
   }
   .mainText {
