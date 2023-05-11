@@ -340,9 +340,8 @@ body {
   .card h2 {
     font-size: 0.55rem;
   }
-
 }
-@media only screen and (max-width: 1600px) and (min-width:600px) {
+@media only screen and (max-width: 1600px) and (min-width: 600px) {
   .card p {
     display: none;
   }
@@ -364,11 +363,9 @@ body {
   .mainText {
     text-align: center;
     margin-left: 1rem;
-    
   }
   .card h2 {
     font-size: 1rem;
-    
   }
 }
 .remember-forgot a {
@@ -455,19 +452,17 @@ body {
 }
 
 .highscore-container {
-  position: relative;
-  height: 340px;
-  width: 400px;
+  height: 18rem;
+  width: 22rem;
   align-items: center;
   text-align: center;
   backdrop-filter: blur(250px);
   background: transparent;
   border-radius: 20px;
   border: 2px solid rgba(255, 255, 255, 0.5);
-  margin: auto;
-  margin-top: 10rem;
+  margin-left: 1rem;
+  margin-top: 5rem;
   padding: 10px;
-  
 }
 
 table {
@@ -486,44 +481,40 @@ h2 {
   font-size: 1.45em;
 }
 .row {
-  display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto;
 }
-@media only screen and (max-width:600px){
-.highscore-container{
-  height: 160px;
-  width:220px;
-  margin-top: 2.5rem;
-}
-.score-font{
-  font-size: 0.8em;
-}
-table td,
-tr,
-h2 {
-  font-size: 0.8em;
-  margin: 0 auto;
-  color: white;
-  font-family: "Super Legend Boy", sans-serif;
-}
-}
-@media only screen and (max-width: 1600px) and (min-width:600px){
-  .highscore-container{
-    height: 160px;
-    width:220px;
-    margin-top: 1rem;
+@media only screen and (max-width: 600px) {
+  .row {
+    margin-left: 1.1rem;
   }
-  .score-font{
-    font-size: 0.8em;
+  .highscore-container {
+    height: 10rem;
+    width: 12rem;
   }
   table td,
-  tr,
-  h2 {
-    font-size: 0.8em;
-    margin: 0 auto;
-    color: white;
-    font-family: "Super Legend Boy", sans-serif;
+  tr {
+    font-size: 0.6rem;
+  }
+  .score-font {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 1600px) and (min-width: 600px) {
+  .row {
+    margin-left: 1.1rem;
+  }
+  .highscore-container {
+    height: 16rem;
+    width: 18rem;
+  }
+  table td,
+  tr {
+    font-size: 0.9rem;
+  }
+  .score-font {
+    font-size: 1.2rem;
   }
 }
