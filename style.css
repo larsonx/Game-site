@@ -105,6 +105,7 @@ body {
   .navbar-links.active {
     display: flex;
   }
+
 }
 .wrapper {
   position: relative;
@@ -211,7 +212,7 @@ body {
   color: white;
   font-family: "Super Legend Boy", sans-serif;
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 8rem;
   
 }
 .h1 {
@@ -327,7 +328,27 @@ body {
   display: flex;
  
 }
-
+@media (max-width:600px) {
+  .card p{
+   display:none;
+  }
+  .card{
+    display:flex;
+    width: 10rem;
+    height: 12rem;
+    margin:1rem;
+  }
+  .grid-container{
+  margin-top: -1rem;
+  margin-left:1rem;
+  display:grid;
+  grid-template-columns: 200px 200px;
+  grid-row: auto auto;
+  }
+  .card h2{
+    font-size: 0.55rem;
+  }
+}
 .remember-forgot a {
   color: rgb(255, 255, 255);
   text-decoration: none;
