@@ -13,7 +13,7 @@
   </head>
   <body>
   <?php
-  include '../header.php';
+  include '../header2.php';
   ?>
     <div class="container">
       <div id="options-container"></div>
