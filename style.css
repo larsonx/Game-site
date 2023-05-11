@@ -341,7 +341,7 @@ body {
     font-size: 0.55rem;
   }
 }
-@media only screen and (max-width: 1600px) and (min-width: 600px) {
+@media only screen and (max-width: 1366px) and (min-width: 600px) {
   .card p {
     display: none;
   }
@@ -502,7 +502,7 @@ h2 {
     font-size: 0.8rem;
   }
 }
-@media only screen and (max-width: 1600px) and (min-width: 600px) {
+@media only screen and (max-width: 1366px) and (min-width: 600px) {
   .row {
     margin-left: 1.1rem;
   }
