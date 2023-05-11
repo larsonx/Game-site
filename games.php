@@ -74,7 +74,7 @@ include 'header.php';
       <p>
         a word game in which one player has to guess a word that the other player has thought of, by guessing the letters in it.
       </p>
-      <a href="galgje/index.php" class="button">
+      <a href="hangman/index.php" class="button">
         Play now
       </a>
     </div>

@@ -9,9 +9,12 @@
       rel="stylesheet"
     />
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
+  <?php
+  include '../header2.php';
+  ?>
     <div class="container">
       <div id="options-container"></div>
       <div id="letter-container" class="letter-container hide"></div>
