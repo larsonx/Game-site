@@ -20,7 +20,6 @@ include 'header.php';
   <h1 class="h1">Choose your game </h1>
 </div>
 <div class="grid-container">
-  
   <div class="grid-item"> 
  <div class = "card">
     <img src="./img/dino.png" alt="" >
