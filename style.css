@@ -342,14 +342,14 @@ body {
   }
 
 }
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1600px) and (min-width:600px) {
   .card p {
     display: none;
   }
   .card {
     display: flex;
-    width: 10rem;
-    height: 12rem;
+    width: 12rem;
+    height: 14rem;
     margin: 1rem;
   }
   .grid-container {
@@ -364,6 +364,11 @@ body {
   .mainText {
     text-align: center;
     margin-left: 1rem;
+    
+  }
+  .card h2 {
+    font-size: 1rem;
+    
   }
 }
 .remember-forgot a {
