@@ -452,16 +452,16 @@ body {
 }
 
 .highscore-container {
-  height: 18rem;
-  width: 22rem;
-  align-items: center;
+  height: 16rem;
+  width: 21.5rem;
+  align-items:left;
   text-align: center;
   backdrop-filter: blur(250px);
   background: transparent;
   border-radius: 20px;
   border: 2px solid rgba(255, 255, 255, 0.5);
-  margin-left: 1rem;
-  margin-top: 5rem;
+  margin-left: 0.5rem;
+  margin-top: 2rem;
   padding: 10px;
 }
 
