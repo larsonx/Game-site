@@ -17,7 +17,7 @@
 <body>
   <div class="game">
     <img id="character" src="../N-N-N-N/img/dino copy.png" />
-    <img id="block" src="../N-N-N-N/img/cactus.png" />
+    <img id="block" src="../N-N-N-N/img/PngItem_1077755.png" />
   </div>
   <p>Score <span id="scoreSpan"></span></p>
   <script src="../N-N-N-N/dino/js/main.js"></script>

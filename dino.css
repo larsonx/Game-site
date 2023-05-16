@@ -11,7 +11,7 @@ body {
 
 }
 .game{
-    background-image: url(../N-N-N-N/img/wild-west.jpg);
+    background-image: url(../N-N-N-N/img/wild-west1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,7 +25,7 @@ body {
 }
 #character{
     width: 40px;
-    height: 50px;
+    height: 70px;
     background-image: url(../N-N-N-N/img/dino\ copy.png);
     position:relative;
     display: block;
@@ -42,7 +42,7 @@ body {
 }
 #block{
     width: 30px;
-    height: 40px;
+    height: 60px;
     position: relative;
     top: 210px;
     left: 500px;
