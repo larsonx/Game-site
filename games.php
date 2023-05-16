@@ -48,7 +48,7 @@
             each player holds out their fist for rock, flat hand for paper, or their index and middle finger for
             scissors.
           </p>
-          <a href="#" class="button">
+          <a href="r_p_s/index.php" class="button">
             Play now
           </a>
         </div>
