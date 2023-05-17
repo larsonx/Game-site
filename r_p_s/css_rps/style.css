@@ -1,5 +1,7 @@
 body {
-    background-color: rgb(65, 64, 64);
+    background-image: url(../../img/1624.jpg);
+    background-image: cover;
+    background-size: cover;
 }
 #pcHand {
     width: 200px;
@@ -82,8 +84,9 @@ button {
     align-items: center;
     margin-bottom: 100px;
     margin-left: 1%;
-    font-family: 'Rubik Vinyl', cursive;
-    color: white;
+    font-family: "Super Legend Boy", sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
     margin-top: 45%;
     font-size: 20pt;
 }

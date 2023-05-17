@@ -90,7 +90,7 @@ function scoreCounter() {
   score.innerHTML = "<br>" + scorePlayer + " - " + scoreComputer;
 }
 
-function streak() {
+function streak(ultra) {
   if (scorePlayer >= 5 && scoreComputer == 0) {
     alert("WOW Je hebt 5 keer achterelkaar gewonnen! Je hebt een MEGA-streak!");
     team.style.color = "red";
@@ -103,6 +103,10 @@ function streak() {
     teamCpu.style.color = "red";
     teamCpu.style["textShadow"] =
       "3px 2px 2px red, 3px 2px 4em blue, 0 0 0.10em red";
+  } else if (scorePlayer >= 1 && scoreComputer == 0) {
+    ultra();
+  } else if (scoreComputer >= 1 && scorePlayer == 0) {
+    ultra();
   } else if (scorePlayer >= 3 && scoreComputer == 0) {
     alert("Je hebt 3 keer gewonnen. Je hebt een streak!");
     team.style.color = "orange";
@@ -113,10 +117,6 @@ function streak() {
     teamCpu.style.color = "orange";
     teamCpu.style["textShadow"] =
       "3px 2px 2px orange, 3px 2px 4em blue, 0 0 0.10em orange";
-  } else if (scorePlayer >= 10 && scoreComputer == 0) {
-    ultra();
-  } else if (scoreComputer >= 10 && scorePlayer == 0) {
-    ultra();
   } else {
     team.style.color = "white";
     teamCpu.style.color = "white";
@@ -139,14 +139,14 @@ function gradient() {
 //werkt goed. maar probleem is dat alert wordt steeds herhaald door de settimeout. Ik moet andere manier bedanken waarbij tekst uit komt
 // een keer en niet hele tijd door.
 function ultra() {
-  if (scorePlayer == 10 && scoreComputer == 0) {
-    // alert("Je hebt 10 keer gewonnen!! Je hebt een ULTRA-streak!");
+  if (scorePlayer === 1 && scoreComputer === 0) {
+    alert("Je hebt 10 keer gewonnen!! Je hebt een ULTRA-streak!");
     team.style.color = gradient();
-    setTimeout(ultra, 300);
-  } else if (scoreComputer == 10 && scorePlayer == 0) {
-    // alert("CPU heeft 10 keer gewonnen!! CPU heeft een ULTRA-streak!");
+    return;
+  } else if (scoreComputer === 1 && scorePlayer === 0) {
+    alert("CPU heeft 10 keer gewonnen!! CPU heeft een ULTRA-streak!");
     teamCpu.style.color = gradient();
-    setTimeout(ultra, 300);
+    return;
   }
 }
 
