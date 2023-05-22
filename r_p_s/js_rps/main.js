@@ -71,10 +71,23 @@ function winner(handPlayer, hand) {
     result.innerHTML = "Je hebt verloren";
   }
   scoreCounter();
-  streak();
+  streak(ultra); // Pass the ultra function as a parameter
   gamePlayed++;
   console.log(gamePlayed);
   endGame();
+}
+
+// here comes the ultra function
+function ultra() {
+  if (scorePlayer === 10 && scoreComputer === 0) {
+    alert("Je hebt 10 keer gewonnen!! Je hebt een ULTRA-streak!");
+    team.style.color = gradient();
+    return;
+  } else if (scoreComputer === 10 && scorePlayer === 0) {
+    alert("CPU heeft 10 keer gewonnen!! CPU heeft een ULTRA-streak!");
+    teamCpu.style.color = gradient();
+    return;
+  }
 }
 
 // hier wordt de score bijgehouden
@@ -91,28 +104,38 @@ function scoreCounter() {
 }
 
 function streak(ultra) {
-  if (scorePlayer >= 5 && scoreComputer == 0) {
+  if (scorePlayer >= 10 && scoreComputer === 0) {
+    alert(
+      "WOW Je hebt 10 keer achterelkaar gewonnen! Je hebt een ULTRA-streak!"
+    );
+    team.style.color = "purple";
+    team.style["textShadow"] =
+      "3px 2px 2px purple, 3px 2px 4em blue, 0 0 0.10em purple";
+  } else if (scoreComputer >= 10 && scorePlayer === 0) {
+    alert(
+      "WOW CPU heeft 10 keer achterelkaar gewonnen! CPU heeft een ULTRA-streak!"
+    );
+    teamCpu.style.color = "purple";
+    teamCpu.style["textShadow"] =
+      "3px 2px 2px purple, 3px 2px 4em blue, 0 0 0.10em purple";
+  } else if (scorePlayer >= 5 && scoreComputer === 0) {
     alert("WOW Je hebt 5 keer achterelkaar gewonnen! Je hebt een MEGA-streak!");
     team.style.color = "red";
     team.style["textShadow"] =
       "3px 2px 2px red, 3px 2px 4em blue, 0 0 0.10em red";
-  } else if (scoreComputer >= 5 && scorePlayer == 0) {
+  } else if (scoreComputer >= 5 && scorePlayer === 0) {
     alert(
       "WOW CPU heeft 5 keer achterelkaar gewonnen! CPU heeft een MEGA-streak!"
     );
     teamCpu.style.color = "red";
     teamCpu.style["textShadow"] =
       "3px 2px 2px red, 3px 2px 4em blue, 0 0 0.10em red";
-  } else if (scorePlayer >= 1 && scoreComputer == 0) {
-    ultra();
-  } else if (scoreComputer >= 1 && scorePlayer == 0) {
-    ultra();
-  } else if (scorePlayer >= 3 && scoreComputer == 0) {
+  } else if (scorePlayer >= 3 && scoreComputer === 0) {
     alert("Je hebt 3 keer gewonnen. Je hebt een streak!");
     team.style.color = "orange";
     team.style["textShadow"] =
       "3px 2px 2px orange, 3px 2px 4em blue, 0 0 0.10em orange";
-  } else if (scoreComputer >= 3 && scorePlayer == 0) {
+  } else if (scoreComputer >= 3 && scorePlayer === 0) {
     alert("CPU heeft 3 keer gewonnen. CPU heeft een streak!");
     teamCpu.style.color = "orange";
     teamCpu.style["textShadow"] =
@@ -125,9 +148,6 @@ function streak(ultra) {
   }
 }
 
-// functie random kleur werk op volgende manier: variabele letters bevat letter is cijfers. Variabele color is leeg
-// dat heeft te maken dat straks wordt er loop gedaan en 6 redom getalen en cijfers gegenereerd en in variabele color gezet.
-//Juist die 6 is belangerijk dat crieeert de kleur.
 function gradient() {
   let letters = "0123456789ABCDEF";
   let color = "#";
@@ -135,19 +155,6 @@ function gradient() {
     color += letters[Math.floor(Math.random() * 16)];
   }
   return color;
-}
-//werkt goed. maar probleem is dat alert wordt steeds herhaald door de settimeout. Ik moet andere manier bedanken waarbij tekst uit komt
-// een keer en niet hele tijd door.
-function ultra() {
-  if (scorePlayer === 1 && scoreComputer === 0) {
-    alert("Je hebt 10 keer gewonnen!! Je hebt een ULTRA-streak!");
-    team.style.color = gradient();
-    return;
-  } else if (scoreComputer === 1 && scorePlayer === 0) {
-    alert("CPU heeft 10 keer gewonnen!! CPU heeft een ULTRA-streak!");
-    teamCpu.style.color = gradient();
-    return;
-  }
 }
 
 function endGame() {

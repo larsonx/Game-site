@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="../r_p_s/css_rps/style.css" />
+  <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&family=Teko:wght@500&family=Ubuntu+Condensed&display=swap"
@@ -14,6 +15,9 @@
 </head>
 
 <body>
+  <?php
+  include '../header2.php';
+  ?>
   <div class="gameField">
     <div id="playerHand"></div>
     <div id="pcHand"></div>
