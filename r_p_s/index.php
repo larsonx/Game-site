@@ -8,6 +8,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="../r_p_s/css_rps/style.css" />
   <link rel="stylesheet" href="../style.css" />
+  <script src="../script.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&family=Teko:wght@500&family=Ubuntu+Condensed&display=swap"
