@@ -127,7 +127,7 @@ body {
   height: 520px;
 }
 .wrapper .form-box {
-  width: 100%;
+  width: 80%;
   padding: 40px;
 }
 .wrapper .form-box.login {
