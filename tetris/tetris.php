@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../style.css"/>
   <link rel="stylesheet" href="style2.css"/>
   <script src="tetris.js" href="utf-8"></script>  
-  <script src="script.js" defer></script>
+  <script src="../script.js" defer></script>
   
   
 
