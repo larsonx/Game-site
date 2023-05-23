@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="dino.css" />
+  <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -15,6 +16,9 @@
 </head>
 
 <body>
+<?php
+  include 'header.php';
+  ?>
   <div class="game">
     <img id="character" src="../N-N-N-N/img/dino copy.png" />
     <img id="block" src="../N-N-N-N/img/PngItem_1077755.png" />
