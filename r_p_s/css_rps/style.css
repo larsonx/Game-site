@@ -56,7 +56,7 @@ button {
     margin: 14px 22px;
     cursor: pointer;
     position: static;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .btn :hover {
@@ -73,11 +73,11 @@ button {
     margin: auto;
     padding: auto;
     margin-top: 4%;
-    width: 16%;
+    width: 13%;
     height: 15vh;
 }
 #result {
-    width: 140px;
+    width: 115px;
     Display: block;
     float: left;
     justify-content: center;
@@ -85,13 +85,13 @@ button {
     margin-bottom: 100px;
     margin-left: 1%;
     font-family: "Super Legend Boy", sans-serif;
-    color: rgb(255, 255, 255);
+    color: rgb(72, 6, 107);
     text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
     margin-top: 45%;
-    font-size: 20pt;
+    font-size: 15pt;
 }
 .result :hover {
-    width: 22%;
+    width: 17%;
 }
 
 #score {
@@ -99,7 +99,7 @@ button {
     float: left;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     /* letter-spacing: 170pt; */
     word-spacing: 175pt;
     position: fixed;

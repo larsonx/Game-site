@@ -1,9 +1,4 @@
-*{
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
-    
-}
+
 body {
     background-image: url(../N-N-N-N/img/istockphoto-1167952490-170667a.jpg);
     background-repeat: no-repeat;
@@ -22,6 +17,7 @@ body {
     position: relative;
     justify-content: center;
     align-items: center;
+    margin-top: 15rem;
 }
 #character{
     width: 40px;
