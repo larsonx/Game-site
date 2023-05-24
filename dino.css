@@ -45,13 +45,13 @@ body {
     animation: block 1s infinite linear;    
 }
 @keyframes block{
-    0%{left: 500px}
-    100%{left: -100px}
+    0%{left: 600px}
+    100%{left: -20px}
 }
 p{
     text-align: center;
     position: relative;
     font-size: 2rem;
     font-family: 'Teko', sans-serif;
-    color: black;
+    color: rgb(170, 164, 164);
 }
