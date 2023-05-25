@@ -25,6 +25,10 @@ if (uidExists($conn, $username) !== false){
     header("location: ../Inloggen.php?error=usernametaken;");
 exit();
 }
+if (passwordlength($password <= 6) !== false){
+    header("location: ../Inloggen.php?error=passwordneedsmorechars;");
+exit();
+}
 
 
 else{
