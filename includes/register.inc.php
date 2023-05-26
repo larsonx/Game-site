@@ -21,17 +21,18 @@ if (invalidEmail($email) !== false){
     header("location: ../Inloggen.php?error=invalidemail;");
 exit();
 }
-if (uidExists($conn, $username) !== false){
+if (uidExists($conn, $username, $email) !== false){
     header("location: ../Inloggen.php?error=usernametaken;");
 exit();
 }
-if (passwordlength($password <= 6) !== false){
+if (passwordLength($password <= 6) !== false){
     header("location: ../Inloggen.php?error=passwordneedsmorechars;");
 exit();
 }
 
+createUser($conn, $name, $email, $username, $pwd);
 
-else{
+else {
     header("location: ../Inloggen.php");
 }
 }
