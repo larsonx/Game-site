@@ -48,17 +48,17 @@ include 'header.php';
     <div class="form-box register">
       <h2>Registration</h2>
       <form action="includes/register.inc.php" method="post">
+      <form action="#">
+        <div class="input-box">
+            <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+            <input class="kleur" type="name" name="name" required>
+            <label>Naam</label>
+          </div>
         <div class="input-box">
           <span class="icon"><ion-icon name="person-outline"></ion-icon></ion-icon></ion-icon></span>
           <input class="kleur" type="text" name="uid" required>
           <label>Username</label>
         </div>
-        <form action="#">
-        <div class="input-box">
-            <span class="icon"><ion-icon name="mail-outline"></ion-icon></ion-icon></span>
-            <input class="kleur" type="email" name="email" required>
-            <label>Email</label>
-          </div>
           <div class="input-box">
             <span class="icon"><ion-icon name="mail-outline"></ion-icon></ion-icon></span>
             <input class="kleur" type="email" name="email" required>
