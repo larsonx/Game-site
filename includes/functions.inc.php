@@ -1,6 +1,6 @@
 <?php
 
-function emptynputRegister($name, $email, $username, $pwd){
+function emptyInputRegister($name, $email, $username, $pwd){
 $result ="";
     if (empty($name) || empty($email) || empty($username) || empty($pwd)) {
 $result = true;

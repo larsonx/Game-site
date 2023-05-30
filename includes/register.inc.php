@@ -9,7 +9,7 @@ $pwd = $_POST["pwd"];
 require_once 'dbh.inc.php';
 require_once 'functions.inc.php';
 
-if (emptynputRegister($name, $email, $username, $pwd) !== false){
+if (emptyInputRegister($name, $email, $username, $pwd) !== false){
     header("location: ../Inloggen.php?error=emptyinput");
 exit();
 }
@@ -25,14 +25,12 @@ if (uidExists($conn, $username, $email) !== false){
     header("location: ../Inloggen.php?error=usernametaken;");
 exit();
 }
-if (passwordLength($password <= 6) !== false){
-    header("location: ../Inloggen.php?error=passwordneedsmorechars;");
-exit();
-}
 
 createUser($conn, $name, $email, $username, $pwd);
-
+} 
 else {
     header("location: ../Inloggen.php");
 }
-}
+
+
+
