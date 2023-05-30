@@ -80,6 +80,34 @@ include 'header.php';
         </form>
     </div>
   </div>
+  <?php
+if (isset($_GET["error"])){
+if ($_GET["error"]= "emptyinput"){
+echo "<p>fill in all fields! </p";
+}
+else if($_GET["error"] == "invaliduid"){
+echo "<p> Choose a proper username</p>";
+}
+else if($_GET["error"] == "invalidemail"){
+  echo "<p> Choose a proper email!</p>";
+  }
+  else if($_GET["error"] == "passwordsdontmatch"){
+    echo "<p> Passwords don't match</p>";
+    }
+    else if($_GET["error"] == "usernametaken"){
+      echo "<p>Username already in use.</p>";
+      }
+      else if($_GET["error"] == "none"){
+        echo "<p>You have signed up!</p>";
+        }
+
+}
+
+
+
+
+
+?>
 
 </body>
 
