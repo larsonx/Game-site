@@ -34,9 +34,8 @@ function invalidEmail($email)
     return $result;
 }
 
-function uidExists($conn, $username, $email)
-{
-    $sql = "SELECT * FROM users WHERE usersUid = ? OR usersEmail = ?;";
+function uidExists($conn, $username, $email){
+    $sql = "SELECT * FROM users WHERE usersEmail = ? OR usersUid = ?;";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("location: ../Inloggen.php?error=stmtfailed;");

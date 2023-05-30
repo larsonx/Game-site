@@ -78,7 +78,11 @@
         <div class="login-register">
           <p>Already have an account? <a href="#" class="login-link">Login</a></p>
         </div>
-        <?php
+     
+      </form>
+    </div>
+  </div>
+  <?php
     if (isset($_GET["error"])) {
       if ($_GET["error"] == "emptyinput") {
         echo "<p>fill in all fields! </p";
@@ -95,11 +99,6 @@
       }
     }
     ?>
-      </form>
-    </div>
-    
-  </div>
-  
 
 
 </body>
