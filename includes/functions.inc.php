@@ -3,7 +3,7 @@
 function emptyInputSignup($name, $email, $username, $pwd)
 {
     $result ="";
-    if (empty($name) || empty($username) || empty($email) || empty($pwd)) {
+    if (empty($name) || empty($email) || empty($username) || empty($pwd)) {
         $result = true;
     } else {
         $result = false;
