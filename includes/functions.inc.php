@@ -1,6 +1,6 @@
 <?php
 
-function emptyInputRegister($name, $email, $username, $pwd)
+function emptyInputSignup($name, $email, $username, $pwd)
 {
     $result ="";
     if (empty($name) || empty($username) || empty($email) || empty($pwd)) {
@@ -30,6 +30,7 @@ function invalidEmail($email)
     } else {
         $result = false;
     }
+    return $result;
 }
 
 function uidExists($conn, $username, $email)
@@ -56,7 +57,7 @@ function uidExists($conn, $username, $email)
 }
 function createUser($conn, $username, $email, $name, $pwd)
 {
-    $sql = "INSERT INTO users (usersName, usersEmail, usersUid, usersPwd  )VALUES(?, ?, ?, ?)";
+    $sql = "INSERT INTO users (usersName, usersEmail, usersUid, usersPwd)VALUES(?, ?, ?, ?)";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("location: ../Inloggen.php?error=stmtfailed;");
@@ -65,10 +66,11 @@ function createUser($conn, $username, $email, $name, $pwd)
 
     $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
 
-    mysqli_stmt_bind_param($stmt, "ssss", $name, $username, $email,  $hashedPwd);
+    mysqli_stmt_bind_param($stmt, "ssss", $name, $username, $email, $hashedPwd);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
     header("location: ../Inloggen.php?error=none;");
+    exit();
 
 
 

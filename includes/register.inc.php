@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_POST["submitregister"])) {
+if (isset($_POST["submit"])) {
 $name = $_POST["name"];
 $email = $_POST["email"];
 $username = $_POST["uid"];
@@ -9,7 +9,7 @@ $pwd = $_POST["pwd"];
 require_once 'dbh.inc.php';
 require_once 'functions.inc.php';
 
-if (emptyInputRegister($name, $email, $username, $pwd) !== false){
+if (emptyInputSignup($name, $email, $username, $pwd) !== false){
     header("location: ../Inloggen.php?error=emptyinput");
 exit();
 }
@@ -33,5 +33,5 @@ else {
     exit();
 }
 
-
+?>
 

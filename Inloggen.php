@@ -50,7 +50,7 @@ include 'header.php';
       <form action="includes/register.inc.php" method="post">
         <div class="input-box">
             <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
-            <input class="kleur" type="name" name="name" required>
+            <input class="kleur" type="text" name="name" required>
             <label>Naam</label>
           </div>
         <div class="input-box">
@@ -72,7 +72,7 @@ include 'header.php';
             <label><input type="checkbox">
               I agree to the terms & conditions</label>
           </div>
-          <button type="submit" name="submitregister" class="login-button">Register
+          <button type="submit" name="submit" class="login-button">Register
           </button>
           <div class="login-register">
             <p>Already have an account? <a href="#" class="login-link">Login</a></p>
