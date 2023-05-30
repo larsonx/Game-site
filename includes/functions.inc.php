@@ -1,7 +1,7 @@
 <?php
 
 function emptyInputRegister($name, $email, $username, $pwd){
-$result ="";
+$result;
     if (empty($name) || empty($email) || empty($username) || empty($pwd)) {
 $result = true;
     }
