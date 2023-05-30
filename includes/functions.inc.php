@@ -63,16 +63,20 @@ function createUser($conn, $username, $email, $name, $pwd)
         exit();
     }
 
-    mysqli_stmt_bind_param($stmt, "ssss", $name, $email, $username, $pwd);
+    $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
+
+    mysqli_stmt_bind_param($stmt, "ssss", $name, $email, $username, $hashedPwd);
     mysqli_stmt_execute($stmt);
-
-    $resultData = mysqli_stmt_get_result($stmt);
-    if ($row = mysqli_fetch_assoc($resultData)) {
-        return $row;
-    } else {
-        $result = false;
-        return $result;
-    }
-
     mysqli_stmt_close($stmt);
+    header("location: ../Inloggen.php?error=none;");
+
+
+
+
+
+
+
+
+
+
 }

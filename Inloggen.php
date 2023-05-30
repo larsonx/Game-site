@@ -54,6 +54,11 @@ include 'header.php';
           <label>Username</label>
         </div>
         <form action="#">
+        <div class="input-box">
+            <span class="icon"><ion-icon name="mail-outline"></ion-icon></ion-icon></span>
+            <input class="kleur" type="email" name="email" required>
+            <label>Email</label>
+          </div>
           <div class="input-box">
             <span class="icon"><ion-icon name="mail-outline"></ion-icon></ion-icon></span>
             <input class="kleur" type="email" name="email" required>
