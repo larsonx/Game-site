@@ -11,10 +11,9 @@ $result = true;
 }
 return $result;
 
-function invalidUid($username)
-{
+function invalidUid($username){
 $result;
-    if (!preg_match("/^[a-zA-Z0-9]*$/"), $username) {
+    if (!preg_match("/^[a-zA-Z0-9]*$/",$username)) {
 $result = true;
     }
     else   {
@@ -35,7 +34,7 @@ $result = true;
 }
 
 function uidExists($conn, $username, $email){
-    $sql "SELECT * FROM users WHERE userUid = ? OR usersEmail = ?;";
+    $sql = "SELECT * FROM users WHERE userUid = ? OR usersEmail = ?;";
     $stmt = mysqli_stmt_init($conn); 
 
     
