@@ -48,7 +48,6 @@ include 'header.php';
     <div class="form-box register">
       <h2>Registration</h2>
       <form action="includes/register.inc.php" method="post">
-      <form action="#">
         <div class="input-box">
             <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
             <input class="kleur" type="name" name="name" required>
