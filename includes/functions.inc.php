@@ -8,8 +8,9 @@ function emptyInputSignup($name, $email, $username, $pwd)
     } else {
         $result = false;
     }
+    return $result;
 }
-return $result;
+
 
 function invalidUid($username)
 {
@@ -19,8 +20,8 @@ function invalidUid($username)
     } else {
         $result = false;
     }
+    return $result;
 }
-return $result;
 
 function invalidEmail($email)
 {
@@ -35,7 +36,7 @@ function invalidEmail($email)
 
 function uidExists($conn, $username, $email)
 {
-    $sql = "SELECT * FROM users WHERE userUid = ? OR usersEmail = ?;";
+    $sql = "SELECT * FROM users WHERE usersUid = ? OR usersEmail = ?;";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("location: ../Inloggen.php?error=stmtfailed;");
