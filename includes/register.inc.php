@@ -30,6 +30,7 @@ createUser($conn, $name, $email, $username, $pwd);
 } 
 else {
     header("location: ../Inloggen.php");
+    exit();
 }
 
 

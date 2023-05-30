@@ -2,8 +2,8 @@
 
 function emptyInputRegister($name, $email, $username, $pwd)
 {
-    $result = NULL;
-    if (empty($name) || empty($email) || empty($username) || empty($pwd)) {
+    $result ="";
+    if (empty($name) || empty($username) || empty($email) || empty($pwd)) {
         $result = true;
     } else {
         $result = false;
@@ -13,7 +13,7 @@ return $result;
 
 function invalidUid($username)
 {
-    $result = NULL;
+    $result ="";
     if (!preg_match("/^[a-zA-Z0-9]*$/", $username)) {
         $result = true;
     } else {
@@ -24,7 +24,7 @@ return $result;
 
 function invalidEmail($email)
 {
-    $result = NULL;
+    $result ="";
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $result = true;
     } else {
@@ -65,7 +65,7 @@ function createUser($conn, $username, $email, $name, $pwd)
 
     $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
 
-    mysqli_stmt_bind_param($stmt, "ssss", $name, $email, $username, $hashedPwd);
+    mysqli_stmt_bind_param($stmt, "ssss", $name, $username, $email,  $hashedPwd);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
     header("location: ../Inloggen.php?error=none;");
