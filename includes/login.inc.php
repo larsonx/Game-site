@@ -16,11 +16,14 @@ if (emptyInputLogin($username, $pwd) !== false){
 
 
 loginUser($conn, $username, $pwd);
-
-
-
-
-
-
 }
+else{
+   header("location: ../Inloggen.php"); 
+   exit();
+}
+
+
+
+
+
 ?>
