@@ -44,7 +44,15 @@
         </div>
       </form>
     </div>
-    
+    <?php
+ if (isset($_GET["error"])) {
+  if ($_GET["error"] == "emptyinput") {
+    echo "<p>fill in all fields! </p";
+  } else if ($_GET["error"] == "wronglogin") {
+    echo "<p> Incorrect info</p>";
+  }
+}
+    ?>
    
     <div class="form-box register">
       <h2>Registration</h2>

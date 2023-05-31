@@ -26,12 +26,14 @@ if (uidExists($conn, $username, $email) !== false){
 exit();
 }
 
-createUser($conn, $name, $email, $username, $pwd);
-} 
-else {
-    header("location: ../Inloggen.php");
+createUser($conn,$name,$email, $username, $pwd);
+
+}
+else{
+    header("location ../Inloggen/php");
     exit();
 }
 
-?>
+
+
 
