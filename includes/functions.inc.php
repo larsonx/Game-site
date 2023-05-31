@@ -35,7 +35,7 @@ function invalidEmail($email)
 }
 
 function uidExists($conn, $username, $email){
-    $sql = "SELECT * FROM users WHERE usersEmail = ? OR usersUid = ?;";
+    $sql = "SELECT * FROM users WHERE usersUid = ? OR usersEmail = ?;";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("location: ../Inloggen.php?error=stmtfailed;");
@@ -71,13 +71,12 @@ function createUser($conn, $username, $email, $name, $pwd)
     mysqli_stmt_close($stmt);
     header("location: ../Inloggen.php?error=none;");
     exit();
-
 }
 
-function emptyInputLogin($name, $email, $username, $pwd)
+function emptyInputLogin($username, $pwd)
 {
     $result ="";
-    if (empty($name) || empty($pwd)) {
+    if (empty($username) || empty($pwd)) {
         $result = true;
     } else {
         $result = false;
