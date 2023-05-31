@@ -66,7 +66,7 @@ function createUser($conn, $username, $email, $name, $pwd)
 
     $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
 
-    mysqli_stmt_bind_param($stmt, "ssss", $name, $username, $email, $hashedPwd);
+    mysqli_stmt_bind_param($stmt, "ssss", $name, $email, $username, $hashedPwd);;
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
     header("location: ../Inloggen.php?error=none;");
