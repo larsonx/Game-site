@@ -52,9 +52,9 @@ function uidExists($conn, $username, $email){
         $result = false;
         return $result;
     }
-
-    mysqli_stmt_close($stmt);
 }
+    mysqli_stmt_close($stmt);
+
 function createUser($conn, $username, $email, $name, $pwd)
 {
     $sql = "INSERT INTO users (usersName, usersEmail, usersUid, usersPwd)VALUES(?, ?, ?, ?)";
