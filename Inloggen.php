@@ -24,7 +24,7 @@
       <form action="includes/login.inc.php" method="post">
         <div class="input-box">
           <span class="icon"><ion-icon name="mail-outline"></ion-icon></ion-icon></span>
-          <input class="kleur" type="email" name="email" required>
+          <input class="kleur" type="email" name="uid" required>
           <label>Username/E-mail</label>
         </div>
         <div class="input-box">

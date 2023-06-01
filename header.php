@@ -18,16 +18,15 @@ session_start();
                     <li><a href="./highscore.php">Hi-Score</a></li>
                     <?php
                     if (isset($_SESSION["useruid"])){
-                        echo"<li><a href=Profiel.php>Profile Page</a></li>";
-                        echo"<li><a href=Inloggen.php>Logout</a></li>"; 
+                        echo"<li><a href='Profiel.php'>Profile Page</a></li>";
+                        echo"<li><a href='includes/logout.inc.php'>Log out</a></li>"; 
                     }
                     else{
-                        echo"<li><a href=Inloggen.php>Login</a></li>";
-                         
+                        echo"<li><a href='Inloggen.php''>Login</a></li>";
                     }
                     ?>
                     <li><a href="./games.php">Games</a></li>
-                    <li><a href="./inloggen.php">Login</a></li>
+                    
                 </ul>
         </nav>
         </div>

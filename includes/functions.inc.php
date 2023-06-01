@@ -52,8 +52,9 @@ function uidExists($conn, $username, $email){
         $result = false;
         return $result;
     }
-}
     mysqli_stmt_close($stmt);
+}
+    
 
 function createUser($conn, $username, $email, $name, $pwd)
 {
