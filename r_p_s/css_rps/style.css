@@ -1,0 +1,124 @@
+body {
+    background-image: url(../../img/1624.jpg);
+    background-image: cover;
+    background-size: cover;
+}
+#pcHand {
+    width: 200px;
+    height: 100px;
+    display: inline;
+    margin-left: 150px;
+}
+
+#playerHand {
+    width: 200px;
+    height: 100px;
+    display: inline;
+    margin-right: 150px;
+    
+}
+
+img {
+    width: 190px;
+}
+
+.schaar {
+    width: 120px;
+    margin-left: 5vh;
+}
+
+.gameField {
+    justify-content: center!important;
+    align-items: center !important;
+    padding: 10px;
+    margin-top: 50px;
+    display: flex;
+}
+
+.btn {
+    justify-content: center !important;
+    align-items: center !important;
+    display: flex;  
+}
+
+button {
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 14px 22px;
+    cursor: pointer;
+    position: static;
+    margin-top: 5%;
+}
+
+.btn :hover {
+    opacity: 1rem;
+    background-color:#427744;
+    width: 140px;
+    transition: 0.5s;
+}
+
+.resultbox {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    padding: auto;
+    margin-top: 4%;
+    width: 13%;
+    height: 15vh;
+}
+#result {
+    width: 115px;
+    Display: block;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-left: 1%;
+    font-family: "Super Legend Boy", sans-serif;
+    color: rgb(72, 6, 107);
+    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+    margin-top: 45%;
+    font-size: 15pt;
+}
+.result :hover {
+    width: 17%;
+}
+
+#score {
+    Display: block;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    /* letter-spacing: 170pt; */
+    word-spacing: 175pt;
+    position: fixed;
+    margin-left: 32%;
+    color: white;
+}
+
+#team {
+    margin-left: 32%;
+    margin-top: 10%;
+    width:50px;
+    font-size: 15pt;
+    font-family: 'Rubik Vinyl', cursive;
+    color: white;
+}
+
+#teamCpu {
+    margin-left: 65%;
+    font-size: 15pt;
+    font-family: 'Rubik Vinyl', cursive;
+    color: white;
+}

@@ -12,6 +12,7 @@ session_start();
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
+    </a>
             <div class="navbar-links">
                 <ul>
                     <li><a href="./index.php">Home</a></li>

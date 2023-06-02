@@ -1,9 +1,4 @@
-*{
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
-    
-}
+
 body {
     background-image: url(../N-N-N-N/img/istockphoto-1167952490-170667a.jpg);
     background-repeat: no-repeat;
@@ -11,7 +6,7 @@ body {
 
 }
 .game{
-    background-image: url(../N-N-N-N/img/wild-west.jpg);
+    background-image: url(../N-N-N-N/img/wild-west1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,11 +17,12 @@ body {
     position: relative;
     justify-content: center;
     align-items: center;
+    margin-top: 15rem;
 }
 #character{
     width: 40px;
     height: 50px;
-    background-image: url(../N-N-N-N/img/dino.png);
+    background-image: url(../N-N-N-N/img/dino\ copy.png);
     position:relative;
     display: block;
     top: 250px;
@@ -49,13 +45,13 @@ body {
     animation: block 1s infinite linear;    
 }
 @keyframes block{
-    0%{left: 500px}
-    100%{left: -100px}
+    0%{left: 600px}
+    100%{left: -20px}
 }
 p{
     text-align: center;
     position: relative;
     font-size: 2rem;
     font-family: 'Teko', sans-serif;
-    color: black;
+    color: rgb(170, 164, 164);
 }
