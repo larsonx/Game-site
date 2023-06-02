@@ -15,7 +15,7 @@ if (emptyInputLogin($username, $pwd) !== false){
 }
 
 
-loginUser($conn, $username, $pwd);
+loginUser($conn, $username, $pwd, $email);
 }
 else{
    header("location: ../Inloggen.php"); 
