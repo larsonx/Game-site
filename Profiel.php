@@ -26,14 +26,6 @@ include 'header.php';
                 <h2>Biography</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at orci sit amet augue mollis vestibulum ac vitae elit. Nulla auctor aliquet nisi, eu pellentesque neque pharetra in.</p>
             </div>
-            <div class="profile-achievements">
-                <h2>Achievements</h2>
-                <ul>
-                    <li>Completed 10 online courses</li>
-                    <li>Published a research paper in a scientific journal</li>
-                    <li>Received a scholarship for academic excellence</li>
-                </ul>
-            </div>
         </div>
 </body>
 </html>
