@@ -1,8 +1,41 @@
 <?php
 session_start();
-include('dbh.inc.php');
+include('includes/dbh.inc.php');
 
-function send_password_reset($get_name, $get_email, $token);
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+//Load Composer's autoloader
+require 'phpmailer/vendor/autoload.php';
+
+function send_password_reset($get_name, $get_email, $token)
+{
+    $mail = new PHPMailer(true);
+    $mail->isSMTP();
+    $mail->SMTPAuth = true;
+
+    $mail->Host = 'smtp.gmail.com';
+    $mail->Username = "danila127@outlook.com";
+    $mail->Password = "***";
+
+    $mail->SMTPSecure = "tls";
+    $mail->Port = "587";
+
+    $mail->setFrom("danila127@outlook.com", $get_name);
+    $mail->addAddress($get_email);
+
+    $mail->isHTML(true);
+    $mail->Subject = "Reset your password";
+    $mail_template = "
+    <h2>Reset your password</h2>
+    <p>Hi $get_name, click on the link below to reset your password</p>
+    <a href='http://localhost/git/xampp1/N-N-N-N/N-N-N-N/password-change.php?token=$token&email=$get_email'>Reset Password</a>
+    ";
+
+    $mail->Body = $mail_template;
+    $mail->send();
+}
 
 
 if (isset($_POST['password_reset_link'])) {
@@ -36,4 +69,7 @@ if (isset($_POST['password_reset_link'])) {
         exit(0);
     }
 }
+
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 ?>
