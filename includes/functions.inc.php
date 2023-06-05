@@ -2,7 +2,7 @@
 
 function emptyInputSignup($name, $email, $username, $pwd)
 {
-    $result ="";
+    $result = "";
     if (empty($name) || empty($email) || empty($username) || empty($pwd)) {
         $result = true;
     } else {
@@ -14,7 +14,7 @@ function emptyInputSignup($name, $email, $username, $pwd)
 
 function invalidUid($username)
 {
-    $result ="";
+    $result = "";
     if (!preg_match("/^[a-zA-Z0-9]*$/", $username)) {
         $result = true;
     } else {
@@ -25,7 +25,7 @@ function invalidUid($username)
 
 function invalidEmail($email)
 {
-    $result ="";
+    $result = "";
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $result = true;
     } else {
@@ -34,7 +34,8 @@ function invalidEmail($email)
     return $result;
 }
 
-function uidExists($conn, $username, $email){
+function uidExists($conn, $username, $email)
+{
     $sql = "SELECT * FROM users WHERE usersUid = ? OR usersEmail = ?;";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
@@ -49,12 +50,12 @@ function uidExists($conn, $username, $email){
     if ($row = mysqli_fetch_assoc($resultData)) {
         return $row;
     } else {
+        mysqli_stmt_close($stmt);
         $result = false;
         return $result;
     }
-    mysqli_stmt_close($stmt);
 }
-    
+
 
 function createUser($conn, $username, $email, $name, $pwd)
 {
@@ -76,7 +77,7 @@ function createUser($conn, $username, $email, $name, $pwd)
 
 function emptyInputLogin($username, $pwd)
 {
-    $result ="";
+    $result = "";
     if (empty($username) || empty($pwd)) {
         $result = true;
     } else {
@@ -85,26 +86,26 @@ function emptyInputLogin($username, $pwd)
     return $result;
 }
 
-function loginUser($conn, $username, $pwd){
+function loginUser($conn, $username, $pwd)
+{
     $uidExists = uidExists($conn, $username, $username);
 
-    if($uidExists === false){
+    if ($uidExists === false) {
         header("location: ../Inloggen.php?error=wronglogin ");
         exit();
     }
-$pwdHashed = $uidExists["usersPwd"];
-$checkPwd = password_verify($pwd, $pwdHashed);
+    $pwdHashed = $uidExists["usersPwd"];
+    $checkPwd = password_verify($pwd, $pwdHashed);
 
-if($checkPwd === false) {
-header("location: ../Inloggen.php?error=wronglogin");
+    if ($checkPwd === false) {
+        header("location: ../Inloggen.php?error=wronglogin");
 
-}
-else if($checkPwd === true){
-session_start();
-$_SESSION["userid"] = $uidExists["usersId"];
-$_SESSION["useruid"] = $uidExists["usersUid"];
-header("location: ../index.php?error=wronglogin");
-exit();
-}
+    } else if ($checkPwd === true) {
+        session_start();
+        $_SESSION["userid"] = $uidExists["usersId"];
+        $_SESSION["useruid"] = $uidExists["usersUid"];
+        header("location: ../index.php?error=wronglogin");
+        exit();
+    }
 
 }
