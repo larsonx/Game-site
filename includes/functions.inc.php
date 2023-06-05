@@ -49,10 +49,11 @@ function uidExists($conn, $username, $email){
     if ($row = mysqli_fetch_assoc($resultData)) {
         return $row;
     } else {
+        mysqli_stmt_close($stmt);
         $result = false;
         return $result;
     }
-    mysqli_stmt_close($stmt);
+
 }
     
 
