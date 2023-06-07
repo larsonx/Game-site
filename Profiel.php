@@ -16,11 +16,8 @@ include_once 'includes/dbh.inc.php';
 <body>
 
     <?php
-    
+    include 'header.php';
 
-
-
-    
     ?>
     
 
