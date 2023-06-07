@@ -11,16 +11,13 @@ require 'phpmailer/vendor/autoload.php';
 
 function send_password_reset($get_name, $get_email, $token)
 {
-    $mail = new PHPMailer(true);
+    $mail = new PHPMailer();
     $mail->isSMTP();
+    $mail->Host = 'sandbox.smtp.mailtrap.io';
     $mail->SMTPAuth = true;
-
-    $mail->Host = 'smtp.gmail.com';
-    $mail->Username = "danila127@outlook.com";
-    $mail->Password = "***";
-
-    $mail->SMTPSecure = "tls";
-    $mail->Port = "587";
+    $mail->Port = 2525;
+    $mail->Username = '88e0814e9f6118';
+    $mail->Password = '2cac75e9cbbeaf';
 
     $mail->setFrom("danila127@outlook.com", $get_name);
     $mail->addAddress($get_email);
@@ -34,23 +31,25 @@ function send_password_reset($get_name, $get_email, $token)
     ";
 
     $mail->Body = $mail_template;
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;
     $mail->send();
 }
+
 
 
 if (isset($_POST['password_reset_link'])) {
     $email = mysqli_real_escape_string($conn, $_POST['uid']);
     $token = md5(rand());
 
-    $check_email = "SELECT email FROM users WHERE email='$email' LIMIT 1";
+    $check_email = "SELECT * FROM users WHERE usersEmail='$email' LIMIT 1";
     $check_email_run = mysqli_query($conn, $check_email);
 
     if (mysqli_num_rows($check_email_run) > 0) {
         $row = mysqli_fetch_array($check_email_run);
-        $get_name = $row['username'];
-        $get_email = $row['email'];
+        $get_name = $row['usersName']; // Assuming the username column exists in the table
+        $get_email = $row['usersEmail']; // Change 'email' to 'usersEmail'
 
-        $update_token = "UPDATE users SET verify_token='$token' WHERE email='$get_email' LIMIT 1";
+        $update_token = "UPDATE users SET verify_token='$token' WHERE usersEmail='$get_email' LIMIT 1"; // Change 'email' to 'usersEmail'
         $update_token_run = mysqli_query($conn, $update_token);
 
         if ($update_token_run) {
@@ -70,6 +69,4 @@ if (isset($_POST['password_reset_link'])) {
     }
 }
 
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
 ?>

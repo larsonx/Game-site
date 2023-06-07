@@ -18,6 +18,19 @@
     <?php
     include 'header.php';
     ?>
+    <?php
+    if (isset($_SESSION['status'])) {
+        ?>
+        <div class="succes-field">
+            <p>
+                <?php echo $_SESSION['status']; ?>
+            </p>
+        </div>
+        <?php
+        unset($_SESSION['status']);
+    }
+    ?>
+
     <div class="wrapper">
         <div class="form-box login">
             <h2>Forgot your password?</h2>
@@ -28,7 +41,7 @@
                     <input class="kleur" type="email" name="uid" required>
                     <label>Username/E-mail</label>
                 </div>
-                <button type="submit" name="submit" class="login-button">Reset password
+                <button type="submit" name="password_reset_link" class="login-button">Reset password
                 </button>
                 <div class="login-register">
                     <p>Don't have an account? <a href="inloggen.php" class="register-link">Register</a></p>
