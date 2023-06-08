@@ -521,3 +521,9 @@ h2 {
     font-size: 1.2rem;
   }
 }
+#profileDisplay{
+  display:block;
+  width:60%;
+  margin: 10px auto;
+  border-radius:50%;
+}
