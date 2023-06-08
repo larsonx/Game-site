@@ -32,6 +32,7 @@ $users = mysqli_fetch_all($result, MYSQLI_ASSOC);
             <div class="profile-image">
             <img src="images/<?php echo $user['profile_image']; ?>" width="160px" height="160px"/>                   
             <form action="update_bio.php" method="POST">
+                    <h2>Biography</h2>
                     <?php echo $user['bio']; ?>
                 
             </form>

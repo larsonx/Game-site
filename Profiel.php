@@ -1,4 +1,3 @@
-<?php include 'upload.php' ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -17,11 +16,6 @@
     include 'header.php';
     ?>
 
-
-    <?php if (!empty($msg))
-        ; ?>
-    <div class="alert <?php echo $css_class; ?>">
-        <?php echo $msg; ?>
     </div>
     <div class="container">
         <div class="profile-header">
@@ -40,7 +34,7 @@
                 <textarea name="biography"></textarea>
                 <input type="submit" name="save-user" value="Save">
             </form>
-<script src="scripts.js"></script>
+            <script src="scripts.js"></script>
         </div>
     </div>
 </body>
