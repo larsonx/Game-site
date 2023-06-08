@@ -26,7 +26,7 @@
     <div class="container">
         <div class="profile-header">
             <div class="profile-image">
-                <img src="https://via.placeholder.com/150" onclick="triggerClick()" id="profileDisplay" alt="Profile Picture">
+                <img src="https://via.placeholder.com/150"  onclick="triggerClick()" id="profileDisplay" alt="Profile Picture">
                 <form action="Profiel.php" method="POST" enctype="multipart/form-data">
                     <input type="file" name="user_img" onchange="displayImage(this)" id="user_img" style="display:none">
             </div>
