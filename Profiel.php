@@ -28,16 +28,7 @@
 
 // Fetch the user's ID from the session or database
 
-$userId = 1; // Replace with the code to fetch the user's ID
 
-// Fetch the user's biography from the database
-$sql = "SELECT bio FROM users WHERE usersId='$userId'";
-$result = mysqli_query($conn, $sql);
-if ($row = mysqli_fetch_assoc($result)) {
-  $biography = $row['bio'];
-} else {
-  $biography = "Biography not found"; // Set a default value if biography is not available
-}
 
 
 ?>
