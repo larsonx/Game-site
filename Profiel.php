@@ -14,29 +14,56 @@
 
     <?php
     include 'header.php';
+
+    if (isset($_SESSION['bio'])) {
+        $biography = $_SESSION['bio'];
+        // Display the biography on the profile page
+        echo $biography;
+      }
+
     ?>
+<?php
+
+// Assuming you have already established a database connection ($conn) and started the session (session_start())
+
+// Fetch the user's ID from the session or database
+
+$userId = 1; // Replace with the code to fetch the user's ID
+
+// Fetch the user's biography from the database
+$sql = "SELECT bio FROM users WHERE usersId='$userId'";
+$result = mysqli_query($conn, $sql);
+if ($row = mysqli_fetch_assoc($result)) {
+  $biography = $row['bio'];
+} else {
+  $biography = "Biography not found"; // Set a default value if biography is not available
+}
+
+
+?>
+
+
 
     </div>
     <div class="container">
         <div class="profile-header">
             <div class="profile-image">
-                <img src="https://via.placeholder.com/150"  onclick="triggerClick()" id="profileDisplay" alt="Profile Picture">
-                <form action="Profiel.php" method="POST" enctype="multipart/form-data">
-                    <input type="file" name="user_img" onchange="displayImage(this)" id="user_img" style="display:none">
+            <img src="uploads/<?php echo $profileImage; ?>" alt="Profile Image">
+                <form action="profile_update.php" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="profileImage"  id="profileImage">
             </div>
             <div class="profile-username">
                 <h1>Username</h1>
             </div>
         </div>
         <div class="profile-bio">
-            <h2>Biography</h2>
-            <form action="update_bio.php" method="POST">
-                <textarea name="biography"></textarea>
-                <input type="submit" name="save-user" value="Save">
-            </form>
-            <script src="scripts.js"></script>
+        <label for="bio"><h2>Biography:<h2></label>
+               
+                <textarea name="bio" id="bio"></textarea>
+                  <input type="submit" value="Update Profile">
+            
+         
         </div>
     </div>
 </body>
 
-</html>
