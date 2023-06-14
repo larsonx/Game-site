@@ -20,8 +20,7 @@ include 'header.php';
     <div class="container">
         <div class="profile-header">
             <div class="profile-image">
-            <img src="<?php echo $profileImage; ?>" alt="Profile Image">
-
+                <img src="uploads/<?php echo $profileImage; ?>" alt="Profile Image">
                 <form action="profile_update.php" method="POST" enctype="multipart/form-data">
                     <input type="file" name="profileImage" id="profileImage">
             </div>
