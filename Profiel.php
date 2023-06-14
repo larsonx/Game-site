@@ -15,23 +15,40 @@
 include 'header.php';
 
 
-if (isset($_SESSION['bio'])) {
-    $biography = $_SESSION['bio'];
-    // Display the biography on the profile page
-    echo $biography;
+
+$serverName = "localhost";
+$dBUsername = "root";
+$dBPassword = "";
+$dBName = "gamehub";
+
+$conn = mysqli_connect($serverName, $dBUsername, $dBPassword, $dBName);
+
+if (!$conn) {
+die("Connection failed:" . mysqli_connect_error());
 }
+
+
+$sql = "SELECT * FROM users WHERE usersId = ".$_SESSION["userid"]. "";
+
+ $result = $conn->query($sql);
+
+$row = $result->fetch_assoc();
+
+
+
+ 
 ?>
 
 
     <div class="container">
         <div class="profile-header">
             <div class="profile-image">
-                <img src="uploads/<?php echo $profileImage; ?>" alt="Profile Image">
+                <img src="<?php echo $row['profileImage'] ?>" alt="Profile Image">
                 <form action="profile_update.php" method="POST" enctype="multipart/form-data">
                     <input type="file" name="profileImage" id="profileImage">
             </div>
             <div class="profile-username">
-                <h1>Username</h1>
+                <h1><?php  echo $row['usersName'] ?></h1>
             </div>
         </div>
         <div class="profile-bio">
@@ -39,7 +56,7 @@ if (isset($_SESSION['bio'])) {
                 <h2>Biography:<h2>
             </label>
           
-            <textarea name="bio" id="bio"></textarea>
+            <textarea name="bio" id="bio"><?php echo $row['bio'] ?></textarea>
             <input type="submit" value="Update Profile">
 
 

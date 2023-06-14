@@ -12,12 +12,14 @@ $conn = mysqli_connect($serverName, $dBUsername, $dBPassword, $dBName);
 if (!$conn) {
   die("Connection failed:" . mysqli_connect_error());
 }
-
+session_start();
 // Update the biography
 $biography = $_POST['bio'];
-$userId = 1; // Assuming you have the user's ID available (e.g., fetched from session or database)
+$userId = $_SESSION["userid"]; // Assuming you have the user's ID available (e.g., fetched from session or database)
 
 $sql = "UPDATE users SET bio='$biography' WHERE usersId='$userId'";
+
+
 if (mysqli_query($conn, $sql)) {
     header("location: Profiel.php");
 } else {
