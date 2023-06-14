@@ -43,12 +43,12 @@ $row = $result->fetch_assoc();
     <div class="container">
         <div class="profile-header">
             <div class="profile-image">
-                <img src="<?php echo $row['profileImage'] ?>" alt="Profile Image">
-                <form action="profile_update.php" method="POST" enctype="multipart/form-data">
+                <img src="<?php echo $row['profileImage'] ?>" width="200" height="200" alt="Profile Image">
+                <form class ="bestand" action="profile_update.php" method="POST" enctype="multipart/form-data">
                     <input type="file" name="profileImage" id="profileImage">
             </div>
             <div class="profile-username">
-                <h1><?php  echo $row['usersName'] ?></h1>
+                <h1><?php  echo "Welkom" ."   ". $row['usersName'] ?></h1>
             </div>
         </div>
         <div class="profile-bio">
