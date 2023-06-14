@@ -20,22 +20,11 @@
         // Display the biography on the profile page
         echo $biography;
       }
+      
+   
 
     ?>
-<?php
 
-// Assuming you have already established a database connection ($conn) and started the session (session_start())
-
-// Fetch the user's ID from the session or database
-
-
-
-
-?>
-
-
-
-    </div>
     <div class="container">
         <div class="profile-header">
             <div class="profile-image">
