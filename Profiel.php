@@ -14,6 +14,12 @@
 <?php
 include 'header.php';
 
+
+if (isset($_SESSION['bio'])) {
+    $biography = $_SESSION['bio'];
+    // Display the biography on the profile page
+    echo $biography;
+}
 ?>
 
 
@@ -32,13 +38,7 @@ include 'header.php';
             <label for="bio">
                 <h2>Biography:<h2>
             </label>
-           <?php
-if (isset($_SESSION['bio'])) {
-    $biography = $_SESSION['bio'];
-    // Display the biography on the profile page
-    echo $biography;
-}
-           ?>
+          
             <textarea name="bio" id="bio"></textarea>
             <input type="submit" value="Update Profile">
 

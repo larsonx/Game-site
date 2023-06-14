@@ -39,7 +39,7 @@ if ($_FILES["profileImage"]["size"] > 0) {
     if (move_uploaded_file($_FILES["profileImage"]["tmp_name"], $targetFile)) {
       // Update the profile image path in the database
       $profileImage = $targetFile;
-      $sql = "UPDATE users SET profile_image='$profileImage' WHERE usersId='$userId'";
+      $sql = "UPDATE users SET profileImage='$profileImage' WHERE usersId='$userId'";
       if (mysqli_query($conn, $sql)) {
         header("location: Profiel.php");
       } else {
