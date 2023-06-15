@@ -5,15 +5,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const loginLink = document.querySelector(".login-link");
   const registerLink = document.querySelector(".register-link");
 
-  toggleButton.addEventListener("click", () => {
-    navbarLinks.classList.toggle("active");
-  });
+  if (toggleButton && navbarLinks && wrapper && loginLink && registerLink) {
+    toggleButton.addEventListener("click", () => {
+      navbarLinks.classList.toggle("active");
+    });
 
-  registerLink.addEventListener("click", () => {
-    wrapper.classList.add("active");
-  });
+    registerLink.addEventListener("click", () => {
+      wrapper.classList.add("active");
+    });
 
-  loginLink.addEventListener("click", () => {
-    wrapper.classList.remove("active");
-  });
+    loginLink.addEventListener("click", () => {
+      wrapper.classList.remove("active");
+    });
+  }
 });

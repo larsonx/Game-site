@@ -35,7 +35,7 @@
         <div class="remember-forgot">
           <label><input type="checkbox">
             Remember me</label>
-          <a href="#">Forgot Password?</a>
+          <a href="password_window.php">Forgot Password?</a>
         </div>
         <button type="submit" name="submit" class="login-button">Login
         </button>
@@ -86,7 +86,7 @@
         <div class="login-register">
           <p>Already have an account? <a href="#" class="login-link">Login</a></p>
         </div>
-     
+
       </form>
     </div>
   </div>

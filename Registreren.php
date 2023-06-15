@@ -16,7 +16,7 @@
   
 
   <?php
-include 'header.php';
+ include 'header.php';
   ?>
   <div class="wrapper">
     <div class="form-box register">
