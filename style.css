@@ -453,21 +453,11 @@ body {
   list-style: none;
   color: white;
 }
-
-.highscore-container {
-  height: 16rem;
-  width: 21.5rem;
-  align-items:left;
-  text-align: center;
-  backdrop-filter: blur(250px);
-  background: transparent;
-  border-radius: 20px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  margin-left: 0.5rem;
-  margin-top: 2rem;
-  padding: 10px;
+.bestand{
+  margin-top: 10px;
 }
 
+<<<<<<< HEAD
 table {
   margin: 0 auto;
 }
@@ -530,3 +520,5 @@ h2 {
   display: grid;
   
 }
+=======
+>>>>>>> 51fe4619de376c47be56881fee92c462ef3bd7a0

@@ -45,15 +45,15 @@
       </form>
     </div>
     <?php
-    if (isset($_GET["error"])) {
-      if ($_GET["error"] == "emptyinput") {
-        echo "<p>fill in all fields! </p";
-      } else if ($_GET["error"] == "wronglogin") {
-        echo "<p> Incorrect info</p>";
-      }
-    }
+ if (isset($_GET["error"])) {
+  if ($_GET["error"] == "emptyinput") {
+    echo "<p>fill in all fields! </p";
+  } else if ($_GET["error"] == "wronglogin") {
+    echo "<p> Incorrect info</p>";
+  }
+}
     ?>
-
+   
     <div class="form-box register">
       <h2>Registration</h2>
       <form action="includes/register.inc.php" method="post">
@@ -91,22 +91,22 @@
     </div>
   </div>
   <?php
-  if (isset($_GET["error"])) {
-    if ($_GET["error"] == "emptyinput") {
-      echo "<p>fill in all fields! </p";
-    } else if ($_GET["error"] == "invaliduid") {
-      echo "<p> Choose a proper username</p>";
-    } else if ($_GET["error"] == "invalidemail") {
-      echo "<p> Choose a proper email!</p>";
-    } else if ($_GET["error"] == "passwordsdontmatch") {
-      echo "<p> Passwords don't match</p>";
-    } else if ($_GET["error"] == "usernametaken") {
-      echo "<p>Username already in use.</p>";
-    } else if ($_GET["error"] == "none") {
-      echo "<p>You have signed up!</p>";
+    if (isset($_GET["error"])) {
+      if ($_GET["error"] == "emptyinput") {
+        echo "<p>fill in all fields! </p";
+      } else if ($_GET["error"] == "invaliduid") {
+        echo "<p> Choose a proper username</p>";
+      } else if ($_GET["error"] == "invalidemail") {
+        echo "<p> Choose a proper email!</p>";
+      } else if ($_GET["error"] == "passwordsdontmatch") {
+        echo "<p> Passwords don't match</p>";
+      } else if ($_GET["error"] == "usernametaken") {
+        echo "<p>Username already in use.</p>";
+      } else if ($_GET["error"] == "none") {
+        echo "<p>You have signed up!</p>";
+      }
     }
-  }
-  ?>
+    ?>
 
 
 </body>
