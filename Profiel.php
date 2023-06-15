@@ -45,7 +45,7 @@ $row = $result->fetch_assoc();
             <div class="profile-image">
                 <img src="<?php echo $row['profileImage'] ?>" width="200" height="200" alt="Profile Image">
                 <form class ="bestand" action="profile_update.php" method="POST" enctype="multipart/form-data">
-                    <input type="file" name="profileImage" id="profileImage">
+                    <input class="button-p" type="file" name="profileImage" id="profileImage">
             </div>
             <div class="profile-username">
                 <h1><?php  echo "Welkom" ."   ". $row['usersName'] ?></h1>
@@ -57,8 +57,9 @@ $row = $result->fetch_assoc();
             </label>
           
             <textarea name="bio" id="bio"><?php echo $row['bio'] ?></textarea>
-            <input type="submit" value="Update Profile">
-
+            <div>
+            <input class="button-p" type="submit" value="Update Profile">
+</div>
 
         </div>
     </div>

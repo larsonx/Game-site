@@ -2,7 +2,7 @@
 
 function emptyInputSignup($name, $email, $username, $pwd)
 {
-    $result ="";
+    $result = "";
     if (empty($name) || empty($email) || empty($username) || empty($pwd)) {
         $result = true;
     } else {
@@ -14,7 +14,7 @@ function emptyInputSignup($name, $email, $username, $pwd)
 
 function invalidUid($username)
 {
-    $result ="";
+    $result = "";
     if (!preg_match("/^[a-zA-Z0-9]*$/", $username)) {
         $result = true;
     } else {
@@ -25,7 +25,7 @@ function invalidUid($username)
 
 function invalidEmail($email)
 {
-    $result ="";
+    $result = "";
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $result = true;
     } else {
@@ -34,7 +34,8 @@ function invalidEmail($email)
     return $result;
 }
 
-function uidExists($conn, $username, $email){
+function uidExists($conn, $username, $email)
+{
     $sql = "SELECT * FROM users WHERE usersUid = ? OR usersEmail = ?;";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
@@ -53,9 +54,8 @@ function uidExists($conn, $username, $email){
         $result = false;
         return $result;
     }
-
 }
-    
+
 
 function createUser($conn, $username, $email, $name, $pwd)
 {
@@ -77,7 +77,7 @@ function createUser($conn, $username, $email, $name, $pwd)
 
 function emptyInputLogin($username, $pwd)
 {
-    $result ="";
+    $result = "";
     if (empty($username) || empty($pwd)) {
         $result = true;
     } else {
