@@ -16,7 +16,6 @@ session_start();
             <div class="navbar-links">
                 <ul>
                     <li><a href="./index.php">Home</a></li>
-                    <li><a href="./highscore.php">Hi-Score</a></li>
                     <li><a href="./games.php">Games</a></li>
                     <?php
                     if (isset($_SESSION["useruid"])){

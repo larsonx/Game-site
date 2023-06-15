@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
@@ -8,32 +9,58 @@
     <script src="script.js" defer></script>
     <title>GameHub</title>
 </head>
-<body>
 
+<body>
 <?php
 include 'header.php';
-  ?>
-        <div class="container">
-            <div class="profile-header">
-                <div class="profile-image">
-                    <img src="https://via.placeholder.com/150" alt="Profile Image">
-                </div>
-                <div class="profile-username">
-                    <h1>Username</h1>
-                </div>
+
+
+
+$serverName = "localhost";
+$dBUsername = "root";
+$dBPassword = "";
+$dBName = "gamehub";
+
+$conn = mysqli_connect($serverName, $dBUsername, $dBPassword, $dBName);
+
+if (!$conn) {
+die("Connection failed:" . mysqli_connect_error());
+}
+
+
+$sql = "SELECT * FROM users WHERE usersId = ".$_SESSION["userid"]. "";
+
+ $result = $conn->query($sql);
+
+$row = $result->fetch_assoc();
+
+
+
+ 
+?>
+
+
+    <div class="container">
+        <div class="profile-header">
+            <div class="profile-image">
+                <img src="<?php echo $row['profileImage'] ?>" width="200" height="200" alt="Profile Image">
+                <form class ="bestand" action="profile_update.php" method="POST" enctype="multipart/form-data">
+                    <input class="button-p" type="file" name="profileImage" id="profileImage">
             </div>
-            <div class="profile-bio">
-                <h2>Biography</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at orci sit amet augue mollis vestibulum ac vitae elit. Nulla auctor aliquet nisi, eu pellentesque neque pharetra in.</p>
-            </div>
-            <div class="profile-achievements">
-                <h2>Achievements</h2>
-                <ul>
-                    <li>Completed 10 online courses</li>
-                    <li>Published a research paper in a scientific journal</li>
-                    <li>Received a scholarship for academic excellence</li>
-                </ul>
+            <div class="profile-username">
+                <h1><?php  echo "Welkom" ."   ". $row['usersName'] ?></h1>
             </div>
         </div>
+        <div class="profile-bio">
+            <label for="bio">
+                <h2>Biography:<h2>
+            </label>
+          
+            <textarea name="bio" id="bio"><?php echo $row['bio'] ?></textarea>
+            <div>
+            <input class="button-p" type="submit" value="Update Profile">
+</div>
+
+        </div>
+    </div>
 </body>
-</html>

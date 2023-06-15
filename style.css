@@ -453,71 +453,7 @@ body {
   list-style: none;
   color: white;
 }
-
-.highscore-container {
-  height: 16rem;
-  width: 21.5rem;
-  align-items:left;
-  text-align: center;
-  backdrop-filter: blur(250px);
-  background: transparent;
-  border-radius: 20px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  margin-left: 0.5rem;
-  margin-top: 2rem;
-  padding: 10px;
+.bestand{
+  margin-top: 10px;
 }
 
-table {
-  margin: 0 auto;
-}
-
-table td,
-tr,
-h2 {
-  margin: 0 auto;
-  color: white;
-  font-family: "Super Legend Boy", sans-serif;
-}
-
-.score-font {
-  font-size: 1.45em;
-}
-.row {
-  justify-content: center;
-  align-items: center;
-  display: grid;
-  grid-template-columns: auto auto;
-}
-@media only screen and (max-width: 600px) {
-  .row {
-    margin-left: 1.1rem;
-  }
-  .highscore-container {
-    height: 10rem;
-    width: 12rem;
-  }
-  table td,
-  tr {
-    font-size: 0.6rem;
-  }
-  .score-font {
-    font-size: 0.8rem;
-  }
-}
-@media only screen and (max-width: 1366px) and (min-width: 600px) {
-  .row {
-    margin-left: 1.1rem;
-  }
-  .highscore-container {
-    height: 16rem;
-    width: 18rem;
-  }
-  table td,
-  tr {
-    font-size: 0.9rem;
-  }
-  .score-font {
-    font-size: 1.2rem;
-  }
-}
