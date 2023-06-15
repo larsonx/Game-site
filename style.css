@@ -521,3 +521,12 @@ h2 {
     font-size: 1.2rem;
   }
 }
+
+.succes-field {
+  color: white;
+  font-family: "Super Legend Boy", sans-serif;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  
+}
