@@ -14,6 +14,7 @@
   color: white;
   padding: 0.4rem;
 }
+
 body {
   height: 100vh;
   margin: 0;
@@ -457,7 +458,6 @@ body {
   margin-top: 10px;
 }
 
-<<<<<<< HEAD
 table {
   margin: 0 auto;
 }
@@ -520,5 +520,13 @@ h2 {
   display: grid;
   
 }
-=======
->>>>>>> 51fe4619de376c47be56881fee92c462ef3bd7a0
+
+.welcome-field {
+  color: white;
+  font-family: "Super Legend Boy", sans-serif;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  margin-top: 10%;
+}
+
