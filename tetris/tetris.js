@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  //move down function
+  //move down functie
   function moveDown() {
     if (
       !current.some((index) =>
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  //freeze function
+  //freeze functie
   function freeze() {
     if (
       current.some((index) =>
@@ -177,12 +177,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function checkRotatedPosition(P) {
-    P = P || currentPosition; //get current position.  Then, check if the piece is near the left side.
+    P = P || currentPosition; // Pakt de huidige positie
     if ((P + 1) % width < 4) {
-      //add 1 because the position index can be 1 less than where the piece is (with how they are indexed).
+      //+1 1 because the position index can be 1 less than where the piece is (with how they are indexed).
       if (isAtRight()) {
-        //use actual position to check if it's flipped over to right side
-        currentPosition += 1; //if so, add one to wrap it back around
+        //gebruik de echte positie om te checken of het naar rechts is geflipt
+        currentPosition += 1; 
         checkRotatedPosition(P); //check again.  Pass position from start, since long block might need to move more.
       }
     } else if (P % width > 5) {
@@ -202,12 +202,12 @@ document.addEventListener("DOMContentLoaded", () => {
     current = theTetrominoes[random][currentRotation];
     checkRotatedPosition();
     
-    // check for block collision
+    // check voor blok collision
     for (let i = 0; i < current.length; i++) {
     if ((currentPosition + current[i]) % width < 0 ||
     (currentPosition + current[i]) % width >= width ||
     squares[currentPosition + current[i]].classList.contains('taken')) {
-    // if the rotated tetromino overlaps with a taken square, rotate it back
+    // als een tetromino overlapt met een blokje roteer hem terug
     currentRotation--;
     if (currentRotation < 0) {
     currentRotation = current.length - 1;
@@ -223,12 +223,12 @@ document.addEventListener("DOMContentLoaded", () => {
   
   /////////
 
-  //show up-next tetromino in mini-grid display
+  //volgende tetromino in the mini-grid
   const displaySquares = document.querySelectorAll(".mini-grid div");
   const displayWidth = 4;
   const displayIndex = 0;
 
-  //the Tetrominos without rotations
+  //Tetrominos zonder rotaties
   const upNextTetrominoes = [
     [1, displayWidth + 1, displayWidth * 2 + 1, 2], //lTetromino
     [0, displayWidth, displayWidth + 1, displayWidth * 2 + 1], //zTetromino
@@ -237,9 +237,9 @@ document.addEventListener("DOMContentLoaded", () => {
     [1, displayWidth + 1, displayWidth * 2 + 1, displayWidth * 3 + 1], //iTetromino
   ];
 
-  //display the shape in the mini-grid display
+  //mini-grid display
   function displayShape() {
-    //remove any trace of a tetromino form the entire grid
+    
     displaySquares.forEach((square) => {
       square.classList.remove("tetromino");
       square.style.backgroundColor = "";
@@ -251,7 +251,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  //add functionality to the button
+  //button functionaliteit
   startBtn.addEventListener("click", () => {
     document.addEventListener("keydown", controlKeyDown);
     document.addEventListener("keyup", controlKeyUp);

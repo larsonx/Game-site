@@ -16,8 +16,8 @@ function send_password_reset($get_name, $get_email, $token)
     $mail->Host = 'sandbox.smtp.mailtrap.io';
     $mail->SMTPAuth = true;
     $mail->Port = 2525;
-    $mail->Username = '88e0814e9f6118';
-    $mail->Password = '2cac75e9cbbeaf';
+    $mail->Username = '4cd92ce9cb3ff1';
+    $mail->Password = '289aaa5bbf5d51';
 
     $mail->setFrom("danila127@outlook.com", $get_name);
     $mail->addAddress($get_email);

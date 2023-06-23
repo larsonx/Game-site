@@ -7,7 +7,7 @@ const newGameButton = document.getElementById("new-game-button");
 const canvas = document.getElementById("canvas");
 const resultText = document.getElementById("result-text");
 
-//Options values for buttons
+//Options values voor de buttons
 let options = {
   fruits: [
     "Apple",
@@ -34,7 +34,7 @@ let count = 0;
 let score = 0;
 let chosenWord = "";
 
-//Display option buttons
+//Optie display
 const displayOptions = () => {
   optionsContainer.innerHTML += `<h3>Please Select An Option</h3>`;
   let buttonCon = document.createElement("div");
@@ -44,23 +44,23 @@ const displayOptions = () => {
   optionsContainer.appendChild(buttonCon);
 };
 
-//Block all the Buttons
+//Block alle buttons
 const blocker = () => {
   let optionsButtons = document.querySelectorAll(".options");
   let letterButtons = document.querySelectorAll(".letters");
-  //disable all options
+  //opties uitzetten
   optionsButtons.forEach((button) => {
     button.disabled = true;
   });
 
-  //disable all letters
+  //letters uitzetten
   letterButtons.forEach((button) => {
     button.disabled.true;
   });
   newGameContainer.classList.remove("hide");
 };
 
-//Word Generator
+//Woord Generator
 const generateWord = (optionValue) => {
   let optionsButtons = document.querySelectorAll(".options");
   //If optionValur matches the button innerText then highlight the button
