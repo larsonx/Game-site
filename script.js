@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const loginLink = document.querySelector(".login-link");
   const registerLink = document.querySelector(".register-link");
 
-  if (toggleButton && navbarLinks && wrapper && loginLink && registerLink) {
+  if (toggleButton) {
     toggleButton.addEventListener("click", () => {
       navbarLinks.classList.toggle("active");
     });
