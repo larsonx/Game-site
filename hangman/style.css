@@ -130,7 +130,8 @@
   .brand-title {
     font-family: "Super Legend Boy", sans-serif;
     font-size: 1.5rem;
-    text-shadow: 1px 1px 2px rgb(194, 194, 194), 0 0 1em rgb(175, 175, 175), 0 0 0.2em rgb(209, 209, 209);
+    text-shadow: 1px 1px 2px rgb(194, 194, 194), 0 0 1em rgb(175, 175, 175),
+      0 0 0.2em rgb(209, 209, 209);
     margin: 0.5rem;
     color: white;
   }
@@ -147,7 +148,7 @@
     font-family: "Super Legend Boy", sans-serif;
   
     color: white;
-    padding: 1rem;
+    padding: 0.5rem;
     display: block;
   }
   .navbar-links li:hover {
