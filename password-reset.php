@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-//Load Composer's autoloader
+// Load Composer's autoloader
 require 'phpmailer/vendor/autoload.php';
 
 function send_password_reset($get_name, $get_email, $token)
@@ -35,8 +35,7 @@ function send_password_reset($get_name, $get_email, $token)
     $mail->send();
 }
 
-
-
+// Verwerken van het aanvragen van een wachtwoordreset
 if (isset($_POST['password_reset_link'])) {
     $email = mysqli_real_escape_string($conn, $_POST['uid']);
     $token = md5(rand());
@@ -46,10 +45,10 @@ if (isset($_POST['password_reset_link'])) {
 
     if (mysqli_num_rows($check_email_run) > 0) {
         $row = mysqli_fetch_array($check_email_run);
-        $get_name = $row['usersName']; // Assuming the username column exists in the table
-        $get_email = $row['usersEmail']; // Change 'email' to 'usersEmail'
+        $get_name = $row['usersName']; // Veronderstel dat de kolom 'username' bestaat in de tabel
+        $get_email = $row['usersEmail']; // Verander 'email' in 'usersEmail'
 
-        $update_token = "UPDATE users SET verify_token='$token' WHERE usersEmail='$get_email' LIMIT 1"; // Change 'email' to 'usersEmail'
+        $update_token = "UPDATE users SET verify_token='$token' WHERE usersEmail='$get_email' LIMIT 1"; // Verander 'email' in 'usersEmail'
         $update_token_run = mysqli_query($conn, $update_token);
 
         if ($update_token_run) {
@@ -58,7 +57,7 @@ if (isset($_POST['password_reset_link'])) {
             header('Location: password_window.php');
             exit(0);
         } else {
-            $_SESSION['status'] = "Somthing went wrong. Please try again! #1";
+            $_SESSION['status'] = "Something went wrong. Please try again! #1";
             header('Location: password_window.php');
             exit(0);
         }
@@ -69,27 +68,23 @@ if (isset($_POST['password_reset_link'])) {
     }
 }
 
+// Verwerken van het bijwerken van het wachtwoord
 if (isset($_POST['password_update'])) {
     $email = mysqli_real_escape_string($conn, $_POST['uid']);
     $new_password = mysqli_real_escape_string($conn, $_POST['new_password']);
     $confirm_password = mysqli_real_escape_string($conn, $_POST['confirm_password']);
     $token = mysqli_real_escape_string($conn, $_POST['password_token']);
 
-
     if (!empty($token)) {
         if (!empty($email) && !empty($new_password) && !empty($confirm_password)) {
-            //checking token is valid or not
+            // Controleren of de token geldig is
             $check_token = "SELECT verify_token FROM users WHERE verify_token='$token' LIMIT 1";
             $check_token_run = mysqli_query($conn, $check_token);
 
             if (mysqli_num_rows($check_token_run) > 0) {
                 if ($new_password == $confirm_password) {
-                    // echo $new_password;
-                    // die;
                     $hashedPwd = password_hash($new_password, PASSWORD_DEFAULT);
                     $update_password = "UPDATE users SET usersPwd='$hashedPwd' WHERE verify_token='$token' LIMIT 1";
-                    // echo "test";
-                    // die;
                     $update_password_run = mysqli_query($conn, $update_password);
 
                     if ($update_password_run) {
@@ -102,7 +97,7 @@ if (isset($_POST['password_update'])) {
                         exit(0);
                     }
                 } else {
-                    $_SESSION['status'] = "Password and confirm password does not match!";
+                    $_SESSION['status'] = "Password and confirm password do not match!";
                     header("Location: password-change.php?token=$token&email=$email");
                     exit(0);
                 }
@@ -122,5 +117,4 @@ if (isset($_POST['password_update'])) {
         exit(0);
     }
 }
-
 ?>
