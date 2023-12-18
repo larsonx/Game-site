@@ -1,19 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/super-legend-boy?styles=62384%22");
 
-.span1 {
-  border-radius: 10px;
-  background-color: black;
-  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 0.4rem;
-}
-.span2 {
-  background-color: orange;
-  box-shadow: 5px 5px 10px 5px rgba(254, 140, 0, 0.5);
-  border-radius: 10px;
-  color: white;
-  padding: 0.4rem;
-}
 
 body {
   height: 100vh;
